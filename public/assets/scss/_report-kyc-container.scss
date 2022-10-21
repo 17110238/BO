@@ -1,0 +1,118 @@
+.report-kyc-container {
+  height: 75vh;
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+    button {
+      color: #272b41;
+      border: 1px solid #272b41;
+    }
+
+    button.btn-active {
+      color: #00be00;
+      border: 1px solid #00be00;
+    }
+  }
+  .box-search-login-history {
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+      border: 1px solid transparent;
+      background-color: #e2fee5;
+      color: #00be00;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .date-picker-custom {
+    .date-picker-customer {
+      justify-content: space-between;
+      @media screen and (max-width: 512px) {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .box-date-picker {
+        min-width: 0;
+        width: 50%;
+        @media screen and (max-width: 512px) {
+          width: 100%;
+        }
+      }
+      .icon-from-to {
+        @media screen and (max-width: 512px) {
+          margin: 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 0.5rem;
+
+    .form-search {
+      width: calc(30% - 0.7rem);
+      &:first-child {
+        width: 10%;
+      }
+      // @media screen and (max-width: 1500px) {
+      //   width: calc(33.3333333% - 0.7rem);
+      //   &:first-child {
+      //     width: calc(20% - 0.7rem);
+      //   }
+      // }
+      @media screen and (max-width: 1663px) {
+        width: calc(50% - 0.7rem);
+        &:first-child {
+          width: calc(20% - 0.7rem);
+        }
+        &:nth-child(3) {
+          width: calc(30% - 0.7rem);
+        }
+      }
+      @media screen and (max-width: 1163px) {
+        &:first-child,
+        &:nth-child(3) {
+          width: calc(20% - 0.7rem) ;
+        }
+        &:nth-child(2) {
+          flex-grow: 1;
+        }
+
+        width: calc(50% - 0.7rem) !important;
+      }
+
+      @media screen and (max-width: 830px) {
+          width: 100% !important;
+      }
+      .btn-search {
+        min-width: 100px;
+      }
+    }
+    .form-search.form-search-button {
+      display: flex;
+      // transition: all 0.5s;
+      align-items: flex-end;
+    }
+  }
+
+  .table-data-report-kyc {
+    margin-top: 2rem;
+  }
+}

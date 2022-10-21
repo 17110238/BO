@@ -1,0 +1,56 @@
+.trusted-badge-container {
+  .row {
+    min-height: 553px;
+    padding-right: 15px;
+  }
+  .trusted-badge-main {
+    padding-top: 35px;
+    padding-left: 30px;
+  }
+  h1 {
+    font-size: 32px;
+    color: #272b41;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    color: #272b41;
+    margin-bottom: 22px;
+  }
+  .list-benefit {
+    margin-bottom: 25px;
+    .benefit {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: #272b41;
+      display: flex;
+      align-items: center;
+      > i {
+        margin-right: 15px;
+        font-size: 20px;
+        color: #00be00;
+      }
+    }
+  }
+  .btn-active-now {
+    font-size: 15px;
+    color: #ffffff;
+    background: linear-gradient(257deg, #00be00, #00a500);
+    max-width: 180px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .note {
+    font-size: 13px;
+    color: #8e8e8e;
+  }
+  .col-bg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    img {
+      width: 100%;
+    }
+  }
+}

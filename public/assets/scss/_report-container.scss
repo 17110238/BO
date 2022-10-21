@@ -1,0 +1,145 @@
+.report-container{
+    .report-satistics{
+        .card{
+            .card-header{
+                h6{
+                    color: #272b41;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                }
+            }
+            .card-body{
+                padding: 20px 0;
+                .box-search{
+                    .label-card{
+                        color: #0b0b0b;
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                    }
+                    .form-group{
+                        .form-control{
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: #000000;
+                        }
+                    }
+                }
+                .total-report{
+                    margin: 0;
+                    padding: 0;
+                    .totalItem{
+                        background-size: cover;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 18px 20px 18px 15px;
+                        background-repeat: no-repeat;
+                        &__left{
+
+                        }
+                        &__right{
+                            text-align: right;
+                            .title{
+                                color: #647081;
+                                font-size: 16px;
+                                font-weight: 600;
+                                letter-spacing: 0;
+                            }
+                            .count{
+                                color: #000050;
+                                font-size: 30px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .item-success{
+                        background: url('/assets/img/report/bg-success-trans.svg');
+                        border-bottom-right-radius: 12px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .item-dined{
+                        background: url('/assets/img/report/bg-dined-trans.svg');
+                        border-bottom-right-radius: 12px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .item-refund{
+                        background: url('/assets/img/report/bg-refund-trans.svg');
+                        border-bottom-right-radius: 12px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .item-totalRevenue{
+                        background: url('/assets/img/report/bg-revenue-trans.svg');
+                        border-bottom-right-radius: 12px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+    .data-trans{
+        .card{
+            .card-header{
+                .title-trans{
+                    color: #272b41;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                }
+            }
+            .card-body{
+                padding: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .report-container{
+        .report-satistics{
+            .card{
+                .card-header{
+                    h6{
+                        
+                    }
+                }
+                .card-body{
+                   
+                    .box-search{
+                        .label-card{
+                           
+                        }
+                        .form-group{
+                            .form-control{
+                               
+                            }
+                        }
+                    }
+                    .total-report{
+                        
+                        .totalItem{
+                            &__left{
+                                img{
+                                    width: 80%;
+                                }
+                            }   
+                            &__right{
+                                .title{
+                                    font-size: 14px;
+                                }
+                                .count{ 
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

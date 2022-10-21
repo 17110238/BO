@@ -1,0 +1,95 @@
+.report-ewallet-mc-container {
+  .report-ewallet-mc__box-search {
+    padding: 1rem;
+    form {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .form-group {
+        margin-right: 1rem;
+      }
+
+      .form-search {
+        width: 30%;
+        min-width: 350px;
+        max-width: 400px;
+        padding-left: 0;
+        flex-grow: 1;
+        @media screen and (max-width: 1176px){
+          min-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-right: 0;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 500px) {
+          min-width: 100%;
+        }
+      }
+
+      .form-btn {
+        .btn-search {
+          width: 100px;
+        }
+
+        @media screen and (max-width: 750px) {
+          width: 100%;
+          margin-top: 0.5rem;
+          .btn-search {
+            width: 100%;
+          }
+        }
+      }
+      .form-date {
+        .date-picker-from-error {
+          &:first-child {
+            border: 1px solid red;
+            border-radius: 12px;
+          }
+        }
+        .date-picker-to-error {
+          &:last-child {
+            border: 1px solid red;
+            border-radius: 12px;
+          }
+        }
+        .date-picker-custom{
+          .date-picker-customer{
+            .box-date-picker {
+              min-width: 220px;
+            }
+          }
+        }
+        @media screen and (max-width: 750px) {
+          width: 100%;
+          margin-right: 0;
+          .date-picker-customer {
+            justify-content: space-between;
+
+            .box-date-picker {
+              flex-grow: 1;
+            }
+          }
+        }
+
+        @media screen and (max-width: 500px) {
+          .date-picker-customer {
+            flex-direction: column;
+            .icon-from-to {
+              margin: 0.5rem 0rem;
+              justify-content: center;
+              i {
+                transform: rotateZ(90deg);
+              }
+            }
+            .box-date-picker {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

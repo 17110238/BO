@@ -1,0 +1,312 @@
+.supplierContainer {
+  background-color: white;
+  //header  supplier
+  .form-search.form-search-button {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+    button {
+      color: #272b41;
+      border: 1px solid #272b41;
+    }
+
+    button.btn-active {
+      color: #00be00;
+      border: 1px solid #00be00;
+    }
+  }
+  //box search supplier
+  .box-search-supplier {
+    padding: 10px 3px;
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+      border: 1px solid transparent;
+      background-color: #e2fee5;
+      color: #00be00;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .date-picker-custom {
+      .date-picker-customer {
+        justify-content: space-between;
+        @media screen and (max-width: 525px) {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+        .box-date-picker {
+          min-width: 0;
+          width: 50%;
+          @media screen and (max-width: 525px) {
+            width: 100%;
+          }
+        }
+        .icon-from-to {
+          @media screen and (max-width: 525px) {
+            margin: 0 auto;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    form {
+      gap: 0.7rem;
+      margin: 0.5rem;
+      .form-search {
+        width: calc(25% - 0.7rem);
+        @media screen and (max-width: 2032px) {
+          width: calc(33.3333333% - 0.7rem);
+          @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+              width: calc(25% - 0.7rem);
+            }
+          }
+        }
+        @media screen and (max-width: 1552px) {
+          // margin-left: auto;
+          // margin-right: auto;
+          width: calc(50% - 0.7rem);
+          @for $i from 1 through 6 {
+            @if $i == 5 {
+              &:nth-child(#{$i}) {
+                width: calc(50% - 0.7rem);
+              }
+            } @else {
+              &:nth-child(#{$i}) {
+                width: calc(33.333333% - 0.7rem);
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 1157px) {
+          width: calc(50% - 0.7rem) !important;
+          margin-left: auto;
+          margin-right: auto;
+          &:nth-child(5) {
+            width: 100% !important;
+          }
+        }
+        @media screen and (max-width: 920px) {
+          width: 100% !important;
+        }
+        .btn-search {
+          min-width: 100px;
+        }
+      }
+      .form-search.form-search-button {
+        display: flex;
+
+        align-items: flex-end;
+      }
+    }
+  }
+  .form-search .groups-inputs-search-type {
+    background-color: #eff2f7;
+    border-radius: 12px;
+    &:hover {
+      box-shadow: 0 0 1px 1px #00be00;
+    }
+    input.form-control {
+      border-color: transparent;
+      background-color: #eff2f7;
+    }
+    input:focus,
+    textarea:focus,
+    .form-control:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+//config
+.groups-inputs-search-type.groups-searchtext-condition {
+  background-color: #eff2f7 !important;
+
+  border-radius: 12px;
+  input:focus {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+  }
+  input {
+    padding-right: 0 !important;
+
+  }
+  &:hover {
+    box-shadow: 0 0 1px 2px #00be00;
+  }
+}
+//react-select
+.react-select-groups {
+  margin-left: auto;
+  &__placeholder{
+    text-align: end;
+  }
+  &__control {
+   flex-wrap: nowrap !important;
+  }
+  &__single-value {
+    text-align: end;
+  }
+  &__value-container {
+    min-width: 126px;
+  }
+  &__menu {
+    min-width: 156px;
+    // &-list {
+    //   background-color: rgba(0, 190, 0, 0.411);
+    // }
+    .react-select-groups__option:visited,.react-select-groups__option:active{
+      background-color: #00be0069;
+    }
+  }
+}
+
+.react-select {
+  width: 100%;
+  &__control {
+  }
+  &__indicator-separator {
+    display: none;
+  }
+  &__value-container {
+    padding: 0;
+  }
+  &__control--is-disabled {
+    opacity: 0.5;
+  }
+  &__placeholder {
+    white-space: nowrap;
+  }
+
+  &__menu {
+    .react-select__option:visited,.react-select__option:active{
+      background-color: rgba(0, 190, 0, 0.411);
+    }
+  }
+}
+
+
+.react-select__placeholder {
+  white-space: nowrap;
+}
+
+.box-search-suport-ticket {
+  padding: 10px 3px;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    .form-search {
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          width: calc(12% - 0.7rem);
+        }
+      }
+      @for $i from 5 through 9 {
+        &:nth-child(#{$i}) {
+          width: calc(16.666666666% - 0.7rem);
+        }
+      }
+
+      &:nth-child(10) {
+        width: calc(16.666666666% - 0.7rem);
+      }
+
+      &:nth-child(11) {
+        width: calc(30% - 0.7rem);
+      }
+      &:nth-child(12) {
+        width: calc(19% - 0.7rem);
+      }
+      @media screen and (max-width: 1667px) {
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            width: calc(33.333333% - 0.7rem) !important;
+          }
+        }
+
+        &:nth-child(11) {
+          width: calc(45% - 0.7rem);
+        }
+        &:nth-child(12) {
+          width: calc(21% - 0.7rem);
+        }
+      }
+      @media screen and (max-width: 1357px) {
+        &:nth-child(11) {
+          width: calc(66.6666% - 0.7rem);
+        }
+        &:nth-child(12) {
+          width: calc(30% - 0.7rem);
+        }
+      }
+
+      @media screen and (max-width: 818px) {
+        @for $i from 1 through 12 {
+          &:nth-child(#{$i}) {
+            width: 100% !important;
+          }
+        }
+      }
+      .btn-search {
+        min-width: 100px;
+        white-space: nowrap;
+
+        margin-right: 10px;
+      }
+    }
+
+    .date-picker-custom {
+      .date-picker-customer {
+        justify-content: space-between;
+        @media screen and (max-width: 525px) {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+        .box-date-picker {
+          min-width: 0;
+          width: 50%;
+          @media screen and (max-width: 525px) {
+            width: 100%;
+          }
+        }
+        .icon-from-to {
+          @media screen and (max-width: 525px) {
+            margin: 0 auto;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+
+    .form-search.form-search-button {
+      display: flex;
+
+      align-items: flex-end;
+    }
+  }
+}
+
+

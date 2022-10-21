@@ -1,0 +1,140 @@
+.modal-createHyperlink{
+    .modal-dialog{
+        .modal-content{
+            max-width: 411px;
+            margin: 100px auto 0!important;
+            border-radius: 10px;
+            .modal-header{
+                background-image: linear-gradient(261deg, #00be00, #00a500);
+                text-align: center!important;
+                padding: 20px 10px;
+                .modal-title{
+                    color: #fff;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 19px;
+                    margin-left: 50px;
+                    margin: 0 auto!important;
+                }
+            }
+            .modal-body{
+                padding: 0 20px 20px;
+                .createHyperlink-container{
+                    .section{
+                        .label-cus{
+                            font-size: 14px!important;
+                            font-weight: 600;
+                            color: #0b0b0b;
+                            letter-spacing: 0;
+                            .desc{
+                                font-size: 11px;
+                                font-weight: 400;
+                                letter-spacing: 0;
+                                color: #647081;
+                            }
+                        }
+                        .btn-copy-ss{
+                            background-color: #15bd30;
+                            color: #fff;
+                            border:none;
+                            border-radius: 4px;
+                        }
+                        .preview-container{
+                            width: 370px;
+                            height: 84px;
+                            background-color: #eff2f7;
+                            border-radius: 13px;
+                            position: relative;
+                            .btn-customer-review{
+                                position: absolute;
+                                background-color: #fff;
+                                border-radius: 10px;
+                                height: 45px;
+                                border:1px solid #00be00;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                display: flex;
+                                justify-content: space-between;
+                                box-shadow: 0 2px 4px 0 #00000033;
+                                &__left{
+                                    padding: 4px 12px;
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    .labelButton{
+                                        font-size: 18px;
+                                        text-align: center;
+                                        font-weight: 700;
+                                        color: #00be00;
+                                        line-height: 1;
+                                    }
+                                    .powerBy{
+                                        text-align: center;
+                                        span{
+                                            color: #414141;
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                            line-height: 0.5;
+                                        }
+                                    }
+                                }
+                                &__right{
+                                    .logo-btn{
+                                        background-color: #00be00;
+                                        width: 45px;
+                                        height: 45px;
+                                        border-bottom-right-radius: 9px;
+                                        border-top-right-radius: 9px;
+                                        position: relative;
+                                        &::before{
+                                            content: '';
+                                            position: absolute;
+                                            left: -10px;
+                                            bottom: 0;
+                                            // background-color: #00be00;
+                                            width: 0;
+                                            height: 0;
+                                            border-top: 46px solid transparent;
+                                            border-right: 10px solid #00be00;
+                                            border-bottom: -1px solid transparent;
+                                        }
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .content-code-container{
+                            border: 1px solid #e6e6e6;
+                            padding: 9px 24px;
+                            border-radius: 13px;
+                            .content-code{
+                                max-width: 320px;
+                                word-break: break-all;
+                                font-size: 11px;
+                                color: #647081;
+                            }
+                        }
+                        .btn-done{
+                            border-radius: 10px;
+                            background-image: linear-gradient(254deg, #00be00, #00a500);
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 15px;
+                            color: #fff;
+                            line-height: 1.36;
+                            padding: 10px 50px 10px 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

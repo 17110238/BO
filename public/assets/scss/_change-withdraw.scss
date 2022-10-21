@@ -1,0 +1,82 @@
+
+
+.modal-change-withdraw-issue {
+    .modal-dialog {
+      max-width: 450px;
+      margin-top: 20vh;
+      .modal-content {
+        .modal-body {
+          padding: 10px 20px 30px 20px;
+          position: relative;
+          .form-control {
+            border-radius: 15px;
+          }
+          .btn-close-change-withdraw {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            i {
+              margin-right: 0;
+            }
+          }
+          .with-icon {
+            margin-bottom: 26px;
+            .icon-text {
+              font-size: 15px;
+              display: flex;
+              justify-content: flex-start;
+              padding-left: 10px;
+              height: 100%;
+              background-color: #eff2f7;
+              border-radius: 10px 0 0 10px;
+              border: 1px solid #e3e6ef;
+              width: 80px;
+            }
+            input {
+              padding-left: 90px;
+              &:focus {
+                border: 1px solid #e3e6ef;
+              }
+            }
+          }
+          textarea {
+            height: 150px;
+            // line-height: 0;
+            &:focus {
+              border: 1px solid #e3e6ef;
+            }
+          }
+  
+          .form-group {
+            position: relative;
+            .label-control {
+              font-size: 14px;
+              font-weight: 600;
+              color: #0b0b0b;
+            }
+            .invalid-value {
+              color: #ec2a2a;
+              font-size: 11px;
+            }
+          }
+          .btn-change-withdraw {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          .title-modal-change-withdraw {
+            p {
+              font-size: 18px;
+              font-weight: bold;
+              color: #272b41;
+              margin: 0;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+    }
+  }

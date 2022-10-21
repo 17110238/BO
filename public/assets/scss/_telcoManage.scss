@@ -1,0 +1,219 @@
+.telcoManage-container {
+  background-color: #fff;
+  border-radius: 12px;
+  .telcoManage-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+    &__title {
+      @media screen and (max-width: 375px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    &__filter {
+      .filter-btn {
+        border: 1px solid #00be00;
+        color: #00be00;
+        @media screen and (max-width: 375px) {
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (max-width: 375px) {
+      & {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .telcoManage-box-search {
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .telcoManage-group__search {
+      margin-right: 20px;
+      label {
+        width: 100%;
+        margin-bottom: 3px;
+        font-size: 14px;
+        color: #0b0b0b;
+        font-weight: 600;
+        padding-left: 5px;
+      }
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+      &:first-of-type {
+        width: 400px;
+      }
+      .date-picker-customer {
+        flex-wrap: wrap;
+        .box-date-picker {
+          min-width: auto;
+          width: calc(100% / 2 - (36.38px / 2));
+          @media screen and (max-width: 375px) {
+            width: 100%;
+          }
+        }
+        .icon-from-to {
+          @media screen and (max-width: 576px) {
+            width: 100%;
+            margin: 10px 0;
+            justify-content: center;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        &:first-of-type {
+          width: 100%;
+        }
+        & {
+          width: 100%;
+          margin: 0 0 10px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .telcoManage-group__btn {
+      @media screen and (max-width: 1129px) {
+        margin-top: 10px;
+      }
+      @media screen and (max-width: 1024px) {
+        margin-top: 0;
+      }
+      @media screen and (max-width: 896px) {
+        margin-top: 10px;
+      }
+    }
+  }
+  .telcoManage-content {
+    padding: 15px;
+    .telcoManage-table {
+      margin-bottom: 20px;
+      &__header {
+        display: flex;
+        background-color: #218838;
+        padding: 10px 15px;
+        h4 {
+          font-size: 15px;
+          color: #fff;
+          @media screen and (max-width: 576px) {
+            font-size: 13px;
+          }
+          @media screen and (max-width: 499px) {
+            font-size: 12px;
+          }
+        }
+        i {
+          color: #fff;
+          font-size: 15px;
+          padding-right: 10px;
+          @media screen and (max-width: 576px) {
+            font-size: 13px;
+          }
+        }
+      }
+      &__overflow {
+        overflow-x: auto;
+      }
+      &__content {
+        overflow-x: auto;
+        padding: 10px 0;
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+          background-color: rgba(#d8d8d8, 0.3);
+          tr {
+            td {
+              border: 1px solid #d8d8d8;
+              border-right: 2px solid #d8d8d8;
+              padding: 5px 10px;
+              color: #0b0b0b;
+              font-size: 14px;
+              font-weight: 700;
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            transition: all 0.2s;
+            td {
+              border: 1px solid #d8d8d8;
+              border-right: 2px solid #d8d8d8;
+              padding: 5px 10px;
+              font-size: 14px;
+              text-align: right;
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+                color: #00be00;
+              }
+              &:nth-of-type(3) {
+                color: purple;
+              }
+              &:nth-of-type(2) {
+                color: orange;
+              }
+              &:nth-of-type(1) {
+                width: 150px;
+              }
+            }
+            &:hover {
+              background-color: #ecf3f8;
+            }
+          }
+        }
+        tfoot {
+          tr {
+            td {
+              border: 1px solid #d8d8d8;
+              border-right: 2px solid #d8d8d8;
+              padding: 5px 10px;
+              color: #0b0b0b;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: right;
+              color: rgb(31, 31, 208);
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+              }
+              &:nth-of-type(1) {
+                text-align: left;
+                color: #0b0b0b;
+              }
+
+              &.text-underline {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 767px) {
+          width: 150%;
+        }
+        @media screen and (max-width: 576px) {
+          width: 200%;
+        }
+      }
+    }
+  }
+  .date {
+    tbody {
+      tr {
+        td {
+          &:nth-of-type(1) {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

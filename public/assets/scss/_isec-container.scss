@@ -1,0 +1,123 @@
+.isec-container {
+  .isec-report-transaction {
+    &__box-search {
+      form {
+        .form-search {
+          max-width: 500px;
+        }
+        .form-date {
+          max-width: 500px;
+        }
+        @media screen and (min-width: 1921px) {
+          .form-search {
+            max-width: 520px;
+          }
+        }
+        @media screen and (max-width: 1540px) {
+          .form-date,
+          .form-search {
+            width: 50%;
+            max-width: unset !important;
+          }
+        }
+        @media screen and (max-width: 1280px) {
+          .form-date,
+          .form-search {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .isec-container-manage {
+    &__box-search {
+      form {
+        .form-date {
+          max-width: 500px;
+        }
+        @media screen and (min-width: 1801px) {
+          .form-MC-state {
+            max-width: 250px !important;
+          }
+          .form-search {
+            max-width: 520px;
+          }
+        }
+        @media screen and (max-width: 1800px) {
+          .form-MC-state {
+            width: 20%;
+            max-width: unset !important;
+          }
+          .form-date,
+          .form-search {
+            width: 40%;
+            max-width: unset !important;
+          }
+        }
+        @media screen and (max-width: 1200px) {
+          .form-date {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .isec-container-report {
+    &__box-search {
+      form {
+        .form-date {
+          max-width: 500px;
+          @media screen and (max-width: 1100px) {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .search-button-group {
+      & > * {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.isec-report-container {
+  form {
+    & > .form-state {
+      min-width: 250px;
+      max-width: 300px;
+      @media screen and (max-width: 1400px) {
+        max-width: unset !important;
+      }
+    }
+
+    & > .form-search {
+      max-width: 400px !important;
+    }
+
+    @media screen and (min-width: 1921px) {
+      .form-date {
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (max-width: 1520px) {
+      .form-search,
+      .form-state {
+        width: 50%;
+        max-width: unset !important;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .form-search {
+        min-width: unset !important;
+      }
+    }
+  }
+}

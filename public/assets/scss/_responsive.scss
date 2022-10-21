@@ -1,0 +1,136 @@
+@media screen and (max-width: 500px) {
+  .main-content {
+    .contents {
+      .container-fluid {
+        .box-payment {
+          .header-title-payment {
+            .box-btn-payment {
+              .btn {
+                margin: 5px 0;
+              }
+            }
+          }
+        }
+        .box-search {
+          .btn-search {
+            margin-bottom: 10px;
+            margin-top: 0px;
+          }
+          .btn-clear {
+            margin-top: -5px;
+          }
+          .label-empty {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal-create-payment-link {
+    .box-content {
+      .header {
+        font-size: 18px;
+      }
+      .content {
+        .content-form {
+          padding: 10px;
+        }
+        .footer-btn {
+          .btn-cancel {
+            margin-right: 10px !important;
+          }
+          .btn-add {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .box-content {
+    .box-header {
+      justify-content: center;
+      .btn-filter-active,
+      .btn-filter {
+        margin-bottom: 10px;
+      }
+    }
+
+    .box-search {
+      .box-date-picker {
+        flex-wrap: wrap;
+        .duration {
+          margin-right: 0 !important;
+          margin-bottom: 10px;
+          width: 100%;
+        }
+        .input-from-to {
+          padding: 10px;
+          border-radius: 15px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .box-search {
+    .box-date-picker {
+      flex-wrap: wrap;
+      .duration {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      .input-from-to {
+        padding: 10px;
+        border-radius: 15px;
+        width: 100%;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .amount-settlement {
+    .item-amount-settlement {
+      img {
+        width: 90px;
+        margin-top: 10px;
+      }
+      .box-amount {
+        .lbl-amount {
+          font-size: 14px;
+        }
+        .content-amount {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .modal-detail-payment-link {
+    .modal-content-detail {
+      padding: 10px;
+    }
+  }
+  .amount-settlement {
+    .item-amount-settlement {
+      img {
+        width: 50px;
+        margin-top: 10px;
+      }
+      .box-amount {
+        .lbl-amount {
+          font-size: 14px;
+        }
+        .content-amount {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

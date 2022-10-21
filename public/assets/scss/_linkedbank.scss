@@ -1,0 +1,81 @@
+.linkedbank-container {
+  .linkedbank-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #fff;
+    .linkedbank-header__title {
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+      margin-bottom: 0;
+    }
+    .linkedbank-header__filter {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      button:first-child {
+        margin-right: 16px;
+        @media (max-width: 468px) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    @media (max-width: 468px) {
+      & .linkedbank-header__filter,
+      .linkedbank-header__filter button {
+        width: 100%;
+      }
+      .linkedbank-header__filter {
+        margin-top: 8px;
+      }
+    }
+  }
+  .box-search-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: #fff;
+    padding: 10px 25px;
+    .form-group {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .form-control {
+      min-width: 400px;
+      max-width: 500px;
+      height: 40px;
+      @media (max-width: 468px) {
+        min-width: 0;
+      }
+    }
+    .btn-clear {
+      background-color: transparent;
+      border-radius: 8px;
+      border: 1px solid #00be00;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .box-search-container {
+      flex-direction: column;
+      align-items: baseline;
+      .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

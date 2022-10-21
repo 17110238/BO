@@ -1,0 +1,100 @@
+.ewallet-bank-report {
+  &__header-block {
+    .header-block__btn-group {
+      @media screen and (max-width: 450px) {
+        .export-btn {
+          width: 100%;
+          margin-bottom: 0.5rem;
+          margin-left: 0rem !important;
+          .btn-empty {
+            width: unset;
+            flex-grow: initial;
+          }
+        }
+      }
+      @media screen and (max-width: 330px) {
+        .filter-btn {
+          margin-left: 0rem !important;
+        }
+      }
+    }
+  }
+
+  &__box-search {
+    .form-date-season,
+    .form-date-year {
+      min-width: 150px !important;
+      max-width: 225px !important;
+
+      @media screen and (max-width: 1235px) {
+        max-width: unset !important;
+        width: 45%;
+      }
+
+      @media screen and (max-width: 540px) {
+        width: calc(100% - 1rem);
+        min-width: unset !important;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      padding-left: 1rem;
+
+      & > * {
+        flex: 1 0 auto;
+      }
+      .form-group {
+        margin-right: 1rem;
+        padding: 0;
+      }
+
+      .search-button-group {
+        .btn {
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+        }
+        margin-left: 0px !important;
+      }
+      .form-date {
+        @media screen and (max-width: 540px) {
+          .date-picker-customer {
+            flex-wrap: wrap;
+            .icon-from-to {
+              margin: 0.5rem auto;
+              transform: rotateZ(90deg);
+            }
+            .box-date-picker {
+              width: 100%;
+              min-width: unset;
+            }
+          }
+        }
+        @media screen and (max-width: 350px) {
+          width: calc(100% - 1rem);
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .search-button-group {
+          & > * {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .text-last-update {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    font-size: 14px;
+    color: darkslategray;
+    @media screen and (max-width: 375px) {
+      font-size: 12px;
+    }
+  }
+}

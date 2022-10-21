@@ -1,0 +1,94 @@
+.modal-share {
+  max-width: 576px;
+  width: 100%;
+  margin-top: 70px;
+  .modal-content {
+    background: transparent;
+    box-shadow: none;
+  }
+  .modal-body {
+    padding: 0 !important;
+    .card-top {
+      background: url(/assets/img/payme-page/bg-top-success.svg) no-repeat center / cover;
+      border-radius: 9px;
+      margin-bottom: 15px;
+      padding: 40px 30px;
+      .url-address {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        p {
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        .btn-copied {
+          background: #fff;
+          color: #00be00;
+          height: 25px;
+          font-size: 11px;
+          border-radius: 4px;
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+      .url-view {
+        padding: 11px 15px 11px 19px;
+        background: #fff;
+        border-radius: 13px;
+      }
+    }
+    .card-bottom {
+      background: #eff2f7;
+      padding: 24px 34px 35px 21px;
+      border-radius: 9px;
+      display: flex;
+      margin-bottom: 17px;
+      .qr-show {
+        .img-shadow {
+          border-radius: 10px;
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+          background-color: #fff;
+          width: fit-content;
+          height: fit-content;
+          overflow: hidden;
+          padding: 6px;
+        }
+      }
+      .qr-content {
+        padding: 10px 0 0 23px;
+        display: flex;
+        flex-direction: column;
+        .qr-description {
+          &__title {
+            margin-bottom: 10px;
+          }
+        }
+        .btn-save-qr {
+          line-height: initial;
+          background: #fff;
+          color: #00be00;
+          font-size: 11px;
+          border-radius: 4px;
+          height: 25px;
+          margin-top: auto;
+          img {
+            margin-right: 10px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+    .card-foo {
+      .btn-primary {
+        height: 48px;
+        padding: 0 36.5px;
+        min-width: 200px;
+        background: linear-gradient(257deg, #00be00 100%, #00a500);
+      }
+    }
+  }
+}

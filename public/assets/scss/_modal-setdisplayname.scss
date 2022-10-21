@@ -1,0 +1,45 @@
+.modal-setdisplayname {
+  .modal-dialog {
+    .modal-content {
+      max-width: 380px;
+      margin: 0 auto;
+      .modal-header {
+        padding: 10px 20px;
+        border-bottom: none;
+      }
+      .modal-body {
+        padding: 10px 20px 30px;
+        .help-block {
+          font-size: 14px;
+          font-weight: normal;
+          color: #a5aeb8;
+          margin-top: 10px;
+        }
+        .btn-update {
+          width: 100%;
+        }
+        .a-clss {
+          cursor: pointer;
+          font-size: 14px;
+          text-decoration: underline;
+        }
+        .form-group {
+          .form-control {
+            font-size: 15px;
+            font-weight: 600;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+.err-span {
+  color: red;
+  font-size: 12px;
+  text-align: right;
+}
+.border-err {
+  border: 1px solid red!important;
+  box-shadow: 0 0, 0px 5px 20px #b3040448!important;
+}

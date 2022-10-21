@@ -1,0 +1,41 @@
+.modal-send-mail-sms {
+  .modal-content-send {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .content {
+      .preview{
+        margin-left: 15px;
+        flex: auto;
+        .btn-link {
+          line-height: initial;
+          height: initial;
+          margin-left: auto;
+          font-size: 14px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .footer-btn {
+        display: flex;
+        justify-content: center;
+
+        .btn-cancel {
+          width: 96px;
+          height: 44px;
+          margin-right: 16px;
+        }
+        .btn-add {
+          width: 134px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}

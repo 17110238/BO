@@ -1,0 +1,117 @@
+.confirmdeposit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: calc(100vh - 65px - 40px);
+  &__content {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px #c5c5c5;
+    .title {
+      h5 {
+        font-size: 19px;
+        font-weight: 400;
+        margin: 10px 0;
+        line-height: normal;
+      }
+      p {
+        margin: 10px 0px;
+        padding: 0 1px;
+        font-size: 11px;
+        line-height: 15px;
+        color: #999;
+      }
+    }
+  }
+  .content{
+    position: relative;
+    .container__infor{
+      .d-flex-confirm{
+        display: flex;
+      }
+      .label{
+        min-width: 160px;
+      }
+      .content{
+        flex-grow: 1;
+        input{
+          width: 100%;
+        }
+      }
+      .btn-reject{
+        position: absolute;
+        top: 82%;
+        right: 0%;
+      }
+      }
+    }
+  }
+
+
+@media screen and (max-width: 665px) {
+  .confirmdeposit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //height: calc(100vh - 65px - 40px);
+    &__content {
+      width: 100%;
+      max-width: 700px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 1px 1px 10px 1px #c5c5c5;
+      .title {
+        h5 {
+          font-size: 19px;
+          font-weight: 400;
+          margin: 10px 0;
+          line-height: normal;
+        }
+        p {
+          margin: 10px 0px;
+          padding: 0 1px;
+          font-size: 11px;
+          line-height: 15px;
+          color: #999;
+        }
+      }
+    }
+    .content{
+      .container__infor{
+        .label{
+          min-width: 160px;
+        }
+        .d-flex-confirm{
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        .btn-reject{
+          position: absolute;
+          top: 82%;
+          right: 0%;
+        }
+        }
+      
+    }
+  }
+  }
+
+
+.table-deposit {
+  overflow-x: auto;
+  padding: 50px 0px;
+  &__content {
+      border: 1px solid '#000';
+    .head {
+      th {
+        min-width: 50px;
+        padding: 10px 5px;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}

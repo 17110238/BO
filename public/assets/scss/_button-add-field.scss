@@ -1,0 +1,357 @@
+.buttonAddField.dropdown {
+  .dropdown-menu {
+    overflow: initial;
+    // padding-bottom: 5px;
+    .info {
+      left: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: #f5f7f9;
+      border: 1px solid rgba(82, 143, 240, 0.16);
+      padding: 0px 10px 7px;
+
+      h4 {
+        font-size: 1em !important;
+        font-weight: bold;
+
+        padding: 10px 0 10px;
+      }
+    }
+  }
+  .dropdown-menu.top.left {
+    top: 0px !important;
+    left: 0px !important;
+  }
+}
+.buttonAddField {
+  & > .Form {
+    margin: 15px;
+  }
+}
+.cls-background-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.cls-pp-field.fixed {
+  z-index: 500;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  margin-top: -50px;
+  .cls-conent {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    background: #fff;
+    position: relative;
+    padding: 15px;
+    z-index: 2;
+    .field-submit {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+    }
+  }
+}
+@keyframes dropdownAppearInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.OptionsDropdown-list {
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: dropdownAppearInCenter;
+  animation-duration: 0.12s;
+}
+
+.dropdown--active > .dropdown__content > .dropdown-menu {
+  display: block;
+}
+.OptionsDropdown-list {
+  margin-bottom: 40px;
+  width: 224px;
+  max-height: 252px;
+  top: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(82, 143, 240, 0.16);
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 5px 9px 0 #454b5538;
+  animation: dropdownAppearIn 0.1s cubic-bezier(0.13, 1.04, 1, 1);
+  transform-origin: center bottom;
+}
+.dropdown--active > .dropdown__content > .dropdown-menu {
+  display: block;
+}
+.dropdown__content {
+  position: relative;
+}
+.OptionsDropdown-title {
+  margin: 8px 12px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.OptionsDropdown-item > div {
+  padding: 6px 12px;
+}
+.OptionsDropdown-item {
+  padding: 0;
+}
+.OptionsDropdown-item {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 6px 12px;
+  line-height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-stacked > li {
+  float: none;
+}
+.OptionsDropdown-item:hover {
+  background-color: #f5f7f9;
+}
+
+.price-input {
+  & > .Form {
+    margin: 0 !important;
+  }
+  button.btn.btn-default.btn-squared.btn-primary,
+  button.btn.btn-default.btn-squared.btn-outline-primary {
+    background: transparent !important;
+    color: #00be00;
+    // padding: 0;
+  }
+
+  span.enclose-circle {
+    color: #00be00;
+    font-weight: normal;
+  }
+  .btn-default {
+    &:hover {
+      background: none !important;
+      color: #00be00;
+    }
+    padding: 0 10px;
+    border: none !important;
+  }
+  li.OptionsDropdown-item {
+    font-weight: normal;
+  }
+  .info {
+    h4 {
+      color: #000;
+    }
+    p {
+      font-weight: normal;
+    }
+  }
+  .Modal-container .OptionsDropdown {
+    top: 30px;
+    right: 25px;
+  }
+  .buttonAddField.dropdown .dropdown-menu.top.left {
+    top: -222px !important;
+    left: 0px !important;
+  }
+  .EditableUDF::before:hover {
+    background: red !important;
+  }
+  .EditableDisplayField:not(.EditableDisplayField--disabled)::before,
+  .PaymentButton-Create-Form
+    .Form-content.PaymentButtonForm-AmountDetails
+    .EditableDisplayField:not(.EditableDisplayField--disabled)::before {
+    background: none !important;
+    border: none !important;
+    width: 0;
+  }
+
+  .CreatorManager .Modal-container--CreatorModal-BaseForm {
+    margin-bottom: 120px;
+    top: 0;
+    transform: none;
+    right: -56px;
+  }
+  .Modal-container--CreatorModal-BaseForm {
+    position: absolute;
+    top: 50%;
+    left: -44px;
+    right: -56px;
+    z-index: 4;
+    transform: translateY(-50%);
+    overflow: unset;
+    padding: 20px 44px;
+    background: transparent;
+  }
+  .Modal-container--CreatorModal-BaseForm {
+    margin-bottom: 120px;
+    top: 0;
+    transform: none;
+
+    width: 551px;
+    left: -234px;
+    padding-left: 3px;
+  }
+  .mimic-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    animation: modalAppearIn 0.35s cubic-bezier(0.53, 1.78, 1, 1);
+    transform-origin: center;
+    border-radius: 10px;
+  }
+  .tooltip-custom {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    border: none;
+    line-height: 35px;
+    margin: 0;
+    height: 35px;
+    background: #2f3445 !important;
+    color: #fff;
+    font-size: 12px;
+    width: 280px;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    top: -95% !important;
+  }
+  .input-icon.icon-left {
+    &:hover + .tooltip-custom {
+      opacity: 1;
+    }
+    top: 50% !important;
+    left: 35px;
+    color: #afafaf;
+  }
+  .CreatorModal-BaseForm-footer {
+    left: -28px;
+  }
+  .Input-desc {
+    text-align: left;
+  }
+  .Input:nth-child(2) {
+    width: 55%;
+  }
+  .OptionsDropdown-item .subOption {
+    font-size: 12px;
+    line-height: 15px;
+    color: #8991ae;
+  }
+  .Input--checkboxTooltip,
+  .Input--counterTooltip {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    cursor: not-allowed;
+    z-index: 1;
+  }
+
+  .Input-count {
+    position: absolute;
+    right: 18px;
+    top: 25px;
+  }
+
+  .Input--disabled {
+    opacity: 1;
+  }
+  .Input--counterTooltip .Input-content button:nth-of-type(1) {
+    left: 0;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border: none;
+    border-right: 1px solid #e2e2e2;
+    margin: 1px 0 0 1px;
+  }
+  .Input--counterTooltip .Input-content button {
+    position: absolute;
+    width: 28px;
+    height: 22px;
+    font-size: 20px;
+    background: transparent;
+    padding: 0 0 3px 1px;
+    user-select: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    top: 0;
+    line-height: 100%;
+    font-weight: bold;
+  }
+  .Input--counterTooltip .Input-content input {
+    width: 78px;
+    height: 24px;
+    text-align: center;
+  }
+
+  button[disabled],
+  html input[disabled] {
+    cursor: not-allowed !important;
+  }
+  .Input--counterTooltip .Input-content button:nth-of-type(2) {
+    right: 0;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border: none;
+    border-left: 1px solid #e2e2e2;
+    margin: 1px 1px 0 0;
+  }
+
+  .Input--counterTooltip .Input-content button {
+    position: absolute;
+    width: 28px;
+    height: 22px;
+    font-size: 20px;
+    background: transparent;
+    padding: 0 0 3px 1px;
+    user-select: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    top: 0;
+    line-height: 100%;
+    font-weight: bold;
+  }
+
+  .tooltip-count {
+    opacity: 0;
+    top: -60px;
+    left: -222px;
+    position: absolute;
+    background: #272838;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+  }
+
+  .Input-count {
+    top: -21px;
+    cursor: not-allowed !important;
+    &:hover + .tooltip-count {
+      opacity: 1;
+    }
+  }
+}

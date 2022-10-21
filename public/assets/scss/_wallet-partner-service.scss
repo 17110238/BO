@@ -1,0 +1,281 @@
+.partner-service-container {
+  .header-title-payment {
+    padding: 10px 15px !important;
+  }
+  .box-search-partner-service {
+    padding: 15px 15px;
+    flex-wrap: wrap;
+    .select-gate-way__menu-list {
+      height: 170px;
+    }
+    form {
+      flex-wrap: wrap;
+      .form-search {
+        //min-width: 350px;
+      }
+      .form-MC-type,
+      .form-MC-state {
+        min-width: 250px;
+        max-width: 450px;
+      }
+    }
+    form,
+    .date-picker-customer {
+      display: flex;
+      //flex-wrap: wrap;
+    }
+
+    .form-group {
+      .form-label {
+        margin-bottom: 5px;
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        color: #0b0b0b;
+
+        padding-left: 5px;
+      }
+      .form-control {
+        height: 42px;
+      }
+
+      .btn-search {
+        margin-top: 10px;
+        min-width: 85px;
+      }
+    }
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+
+      border: 1px solid transparent;
+
+      background-color: #e2fee5;
+      color: #00be00;
+
+      font-weight: 600;
+
+      cursor: pointer;
+
+      border-radius: 12px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 1310px) {
+      form {
+        .form-date {
+          margin-left: 0px !important;
+          width: 100%;
+          .box-date-picker {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      form {
+        .form-plus-minus {
+          padding-right: 0px;
+        }
+        .form-day-from-to-partner-service {
+          padding: 15px 0px;
+        }
+        .search-button-group-partner-service {
+          margin-left: 0px;
+        }
+      }
+    }
+    @media only screen and (max-width: 750px) {
+      .form-date {
+        margin-left: 0px !important;
+        width: 100%;
+        .box-date-picker {
+          flex-grow: 1;
+        }
+      }
+    }
+    @media only screen and (max-width: 650px) {
+      form {
+        .form-MC-type,
+        .form-MC-state {
+          max-width: unset;
+        }
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      .form-date {
+        .box-date-picker {
+          width: 100%;
+        }
+
+        .icon-from-to {
+          margin: 0.5rem auto;
+          transform: rotateZ(90deg);
+        }
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      form,
+      .date-picker-customer {
+        flex-wrap: wrap;
+      }
+    }
+    @media only screen and (max-width: 430px) {
+      form,
+      .date-picker-customer {
+        flex-wrap: wrap;
+      }
+    }
+    @media only screen and (max-width: 370px) {
+      .search-button-group {
+        flex-wrap: wrap;
+        .btn-clear {
+          margin-right: 15px;
+        }
+        .btn-export {
+          margin-left: 0px;
+          margin-top: 15px;
+        }
+      }
+    }
+    .groups-inputs-search-type {
+      min-height: 41px;
+    }
+    .form-state {
+    }
+    .form-day-from-to {
+      //margin-right: 15px;
+      //max-width: none;
+    }
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+      border: 1px solid transparent;
+      background-color: #e2fee5;
+      color: #00be00;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .partnerService-content {
+    padding: 15px;
+    .partnerService-table {
+      margin-bottom: 20px;
+      &__header {
+        border: 1px solid #d8d8d8;
+        justify-content: space-between;
+        display: flex;
+        background-color: #f3f3f3;
+        padding: 10px 10px;
+        align-items: center;
+        h4 {
+          font-size: 14px;
+          font-weight: 700;
+          @media screen and (max-width: 576px) {
+            font-size: 13px;
+          }
+          @media screen and (max-width: 499px) {
+            font-size: 12px;
+          }
+        }
+        span {
+          font-size: 15px;
+          color: #00be00;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      &__overflow {
+        overflow-x: auto;
+      }
+      &__content {
+        overflow-x: auto;
+        padding: 10px 0;
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+          background-color: rgba(#d8d8d8, 0.3);
+          tr {
+            td {
+              border: 1px solid #d8d8d8;
+              //border-right: 2px solid #d8d8d8;
+              padding: 10px;
+              color: #0b0b0b;
+              font-size: 14px;
+              font-weight: 600;
+              background-color: #f8f9fb;
+              text-align: end;
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+              }
+              &:first-child {
+                text-align: start;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            transition: all 0.2s;
+            td {
+              border: 1px solid #d8d8d8;
+              //border-right: 2px solid #d8d8d8;
+              padding: 10px;
+              font-size: 14px;
+              text-align: right;
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+              }
+              &:nth-of-type(3) {
+              }
+              &:nth-of-type(2) {
+              }
+              &:nth-of-type(1) {
+                width: 150px;
+              }
+            }
+            &:hover {
+              background-color: #ecf3f8;
+            }
+          }
+        }
+        tfoot {
+          tr {
+            td {
+              border: 1px solid #d8d8d8;
+              //border-right: 2px solid #d8d8d8;
+              padding: 10px 10px;
+              color: #0b0b0b;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: right;
+              &:nth-of-type(4) {
+                border-right: 1px solid #d8d8d8;
+              }
+              &:nth-of-type(1) {
+                text-align: left;
+                color: #0b0b0b;
+              }
+              &.text-underline {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 767px) {
+          width: 150%;
+        }
+        @media screen and (max-width: 576px) {
+          width: 200%;
+        }
+      }
+    }
+  }
+}

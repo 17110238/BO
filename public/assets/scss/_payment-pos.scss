@@ -1,0 +1,305 @@
+.payme-pos-page {
+  padding: 88px 0px 88px 110px;
+
+  position: relative;
+
+  margin-bottom: 49px;
+
+  background-image: url(/assets/img/payme-pos/bg-payme-pos.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  .text--green-bold {
+    color: #00be00;
+    font-weight: bold;
+  }
+  &__content-block {
+    margin-bottom: 117px;
+    .content-block {
+      &__title {
+        font-size: 48px;
+        font-weight: bold;
+
+        line-height: 56px;
+
+        color: #000050;
+
+        width: 95%;
+      }
+
+      &__descriptions {
+        font-size: 18px;
+        line-height: 1.44;
+        color: #647081;
+
+        width: 77.5%;
+      }
+
+      &__download-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-left: 36px;
+
+        width: 250px;
+        height: 44px;
+
+        font-size: 20px;
+        font-weight: 600;
+
+        .icon {
+          margin-left: 14px;
+          font-size: 22px;
+        }
+      }
+
+      &__payment-methods {
+        margin: 17px 0px;
+        height: 57px;
+
+        display: flex;
+        align-items: center;
+        img + img {
+          margin-left: 15px;
+        }
+
+        .icon {
+          margin-left: 15px;
+
+          color: #647081;
+        }
+      }
+
+      &__break-line {
+        margin: 43.5px 0px 0px 0px;
+
+        border-color: #e0eaf5;
+
+        width: 90%;
+      }
+
+      &__sub-content-title {
+        height: 26px;
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: bold;
+        color: #000050;
+
+        margin-bottom: 16px;
+        margin-top: 20px;
+      }
+
+      &__customers-statistic {
+        .customers-statistic {
+          &__group-items {
+            padding: 23px 37px;
+            border-radius: 24px;
+            border: solid 1px #e0eaf5;
+
+            display: flex;
+            align-items: center;
+
+            position: absolute;
+            width: max-content;
+
+            .item-statistic {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              position: relative;
+
+              &:not(&:last-child) {
+                &::after {
+                  position: absolute;
+                  content: '';
+
+                  width: 1px;
+                  height: 100%;
+
+                  background-color: #e0eaf5;
+
+                  right: -18px;
+                }
+              }
+              p {
+                margin: 0;
+                height: fit-content;
+              }
+              &__highlight {
+                font-size: 14px;
+
+                span {
+                  font-size: 32px;
+                }
+              }
+
+              &__text {
+                font-size: 14px;
+
+                text-align: center;
+              }
+            }
+
+            .item-statistic + .item-statistic {
+              margin-left: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__sale-statistics {
+    .sale-statistics {
+      &__sub-content-title {
+        height: 26px;
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: bold;
+        color: #000050;
+
+        margin-bottom: 16px;
+        margin-top: 20px;
+      }
+
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        padding-left: 17px;
+        margin-left: 17px;
+      }
+
+      &__item {
+        font-size: 18px;
+
+        flex-grow: 1;
+        flex-basis: 400px;
+
+        font-family: 'Nunito Sans';
+
+        color: #647081;
+
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          background-image: url(/assets/img/payme-pos/icons/ic-arrow/ic-arrow.png);
+
+          width: 9px;
+          height: 14px;
+
+          left: -17px;
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+
+/* mobile: <= 740px */
+@media only screen and (max-width: 740px) {
+  .payme-pos-page {
+    &__content-block {
+      max-width: initial;
+      flex-basis: 100%;
+
+      .content-block {
+        &__customers-statistic {
+          .customers-statistic {
+            &__group-items {
+              width: 90%;
+
+              flex-wrap: wrap;
+              justify-content: space-between;
+
+              .item-statistic + .item-statistic {
+                margin-left: 0;
+              }
+
+              .item-statistic {
+                flex-basis: 35%;
+                flex-grow: 1;
+
+                &::after {
+                  position: static !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .lottie-player {
+      max-width: initial;
+      flex-basis: 100%;
+
+      margin-top: 100px;
+    }
+  }
+}
+
+/* 1201px <= screen <= 1440px */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .payme-pos-page {
+    &__content-block {
+      .content-block {
+        &__title {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        &__descriptions {
+          font-size: 16px;
+        }
+
+        &__payment-methods {
+          zoom: 90%;
+        }
+      }
+    }
+  }
+}
+
+/* 1024px <= screen <= 1200px */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .payme-pos-page {
+    padding: 44px 0px 44px 55px;
+    &__content-block {
+      .content-block {
+        &__title {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        &__descriptions {
+          font-size: 14px;
+        }
+
+        &__payment-methods {
+          zoom: 90%;
+        }
+
+        &__customers-statistic {
+          .customers-statistic {
+            &__group-items {
+              transform: scale(0.9);
+              transform-origin: 0% 0%;
+            }
+          }
+        }
+      }
+    }
+    &__sale-statistics {
+      .sale-statistics__item {
+        font-size: 16px;
+      }
+    }
+  }
+}

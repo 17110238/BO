@@ -1,0 +1,148 @@
+.payout-container{
+  border-radius: 10px;
+  min-height: calc(100vh - 65px - 17px - 26px - 40px);
+    .tabs-payout{
+        background: #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+    .head-manage-team {
+        display: flex;
+        flex: 357px 1;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 19px;
+        > a {
+          font-size: 16px;
+          text-decoration: underline;
+          margin-right: 30px;
+          img {
+            margin-left: 12px;
+          }
+        }
+        .btn-primary {
+          height: 40px;
+          background: linear-gradient(172deg, #00be00 34%, #00a500 129%);
+          img {
+            margin-right: 8px;
+            height: fit-content;
+          }
+        }
+        .btn-outline-primary{
+            &:hover{
+                background-color: transparent;
+                color: #00be00;
+            }
+        }
+      }
+    }
+    .react-tabs__tab-list {
+        margin: 0;
+        padding-bottom: 1px;
+        padding: 0 22px;
+        border-bottom: 0;
+        .react-tabs__tab {
+          padding: 0;
+          display: inline-flex;
+          margin-right: 42px;
+          .title-payment {
+            padding: 14px 9px;
+            font-size: 16px;
+            color: #272b41;
+            border-bottom: 3px solid transparent;
+          }
+          &--selected {
+            border-bottom: 0;
+            .title-payment {
+              padding: 14px 9px;
+              border-bottom: 3px solid #00be00;
+            }
+          }
+          @media screen and (max-width: 1350px) {
+            margin-right: 0;
+            .title-payment {
+              padding: 14px 15px;
+            }
+          }
+        }
+        @media screen and (max-width: 1350px) {
+          margin-left: -15px;
+        }
+    }
+    .payout-wrapper{
+     
+        .box-search-payout{
+            padding: 15px 20px;
+            background-color: #fff;
+            .form-group {
+              .form-label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #0b0b0b;
+             }
+            }
+        }
+        .status{
+            color: #fff;
+            font-size: 11px;
+            text-align: center;
+            letter-spacing: 0;
+            font-weight: 600;
+            background-color: #d8d8d8;
+            padding: 2px 14px;
+            min-width: 100px!important;
+            width: 100%;
+        }
+       
+    }
+    .status-pending{
+        background-color: #ff7a3b!important;
+    }
+    .status-waiting{
+        background-color: #00be00!important;
+    }
+    .status-success{
+        background-color: #3774fb!important;
+    }
+    .status-failed{
+        background-color: #ec2a2a!important;
+    }
+    .status-rejected{
+        background-color: #a5aeb8!important;
+    }
+    .money-transfer-wrapper{
+        .box-search-payout{
+            padding: 10px 20px;
+            background-color: #fff;
+            .form-group {
+              .form-label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #0b0b0b;
+             }
+          } 
+        }
+        .status{
+            color: #fff;
+            font-size: 11px;
+            text-align: center;
+            letter-spacing: 0;
+            font-weight: 600;
+            background-color: #d8d8d8;
+            padding: 2px 14px;
+            min-width: 100px!important;
+            width: 100%;
+        }
+        .status-pending{
+            background-color: #ff7a3b!important;
+        }
+        .status-success{
+            background-color: #3774fb!important;
+        }
+
+        .status-rejected{
+            background-color: #a5aeb8!important;
+        }
+    }
+}

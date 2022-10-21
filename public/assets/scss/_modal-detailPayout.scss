@@ -1,0 +1,257 @@
+.modal-detailPayout{
+    z-index: 9995 !important;
+    .modal-dialog{
+        .modal-content{
+            .modal-header{
+                padding: 18px 24px 15px 24px;
+                .modal-title{
+                    .desc-title{
+                        color: #647081;
+                        font-size: 13px;
+                        letter-spacing: 0;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 15px 24px 24px 24px;
+                .detailPayout{
+                    &__wrapper{
+                        .lb-title{
+                            font-weight: 600;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            color: #0b0b0b;
+                            margin: 0 0 10px 0;
+                        }
+                        .info-detail{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 10px 0;
+                            img{
+                                margin: 0 5px 0 0;
+                            }
+                            .name-detail{
+                                color: #0b0b0b;
+                                font-size: 15px;
+                                font-weight: 400;
+                                margin: 0 10px 0 0;
+                            }
+                            .position-detail{
+                                background-color: #eff2f7;
+                                border: 1px solid #a5aeb8;
+                                border-radius: 10px;
+                                padding: 2px 16px;
+                                color: #647081;
+                                font-size: 13px;
+                                letter-spacing: 0;
+                            }
+                        }
+                        .info-Account{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border: 1px solid #a5aeb8;
+                            padding: 10px 13px;
+                            border-radius: 10px;
+                            .nameAcc{
+                                margin: 0 10px 0 0;
+                                font-size: 15px;
+                                font-weight: normal;
+                                color: #0b0b0b;
+                                min-width: 145px;
+                                i{
+                                    color:#647081
+                                }
+                            }
+                            .typeAccount{
+                                display: inline-flex;
+                                flex: 2;
+                                justify-content: space-around;
+                                li{
+                                    max-width: 185px;
+                                    word-break: break-all;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    color: #647081;
+                                    i{
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .order-info{
+                            border: 1px solid #a5aeb8;
+                            padding: 15px 18px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            border-radius: 10px;
+                            &__left{
+                                border-right: 1px solid #a5aeb8;
+                                width: 150px;
+                                .lb-amount{
+                                    color: #a5aeb8;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    letter-spacing: 0;
+                                    
+                                }
+                                .amount-s{
+                                    color: #0b0b0b;
+                                    letter-spacing: 0;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+
+                            }
+                            &__right{
+                                margin: 0 0 0 20px;
+                                width: calc(100% - 150px);
+                                &__top{
+                                    
+                                }
+                                &__bottom{
+
+                                
+                                }
+                                .lb-desc{
+                                    color: #a5aeb8;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    letter-spacing: 0;
+                                    display: inline-block;
+                                    width: 80px;
+                                }
+                                .cls-info-desc{
+                                    color: #0b0b0b;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    letter-spacing: 0;
+                                    word-break: break-all;
+                                }
+                            }
+                        }
+                        .information{
+                            margin: 30px 0 0 0;
+                            .info-payment{
+                                border-radius: 15px;
+                                border: 1px dashed #a5aeb8;
+                                padding: 15px 80px;
+                                .line-dashed{
+                                  margin: 10px 0;
+                                  border-bottom: 1px dashed #a5aeb8 ;
+                                }
+                                .item-info{
+                                  display: flex;
+                                  justify-content: space-between;
+                                  .label-amount{
+                                    font-size: 15px;
+                                    font-weight: normal;
+                                    color: #647081;
+                                  }
+                                  .content-fee{
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    color: #0b0b0b;
+                                  }
+                                  .content-amount{
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    color: #ec2a2a;
+                                  }
+                                }
+                              }
+                              .group-btn{
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 40px;
+                                margin-bottom: 30px;
+                                .btn{
+                                  max-width: 200px;
+                                  width: 100%;
+                                  height: 45px;
+                                }
+                                .btn-confirm{
+                                  background-color: #00be00;
+                                  margin-right: 10px;
+                                  color: #fff;
+                                }
+                                .btn-refuse{
+                                  background-color: rgba(236, 42, 42, 0.15);
+                                  color:#ec2a2a
+                                }
+                              }
+                            &__title{
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #0b0b0b;
+                                margin: 0 0 5px 0;
+                            }
+                            &__balance{
+                                font-size: 15px;
+                                font-weight: normal;
+                                color: #647081;
+                                margin: 0 0 5px 0;
+                            }
+                            &__content{
+                                &__note{
+                                    background-color: #e6e9ed;
+                                    padding: 16px 18px;
+                                    border-radius: 10px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    .icon-delete{
+                                        margin-right: 10px;
+                                        cursor: pointer;
+                                    }
+                                    .text-desc{
+                                        
+                                        span{
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                                .note-pending{
+                                    background-color: #ffead1;
+                                    color: #ff7a3b;
+                                }
+                                .note-waiting{
+                                    background-color: #e2fee5;
+                                    color: #00be00;
+                                }
+                                .note-success{
+                                    background-color: #ecf2ff;
+                                    color: #3774fb;
+                                }
+                                .note-failed{
+                                    background-color: #ffe7e7;
+                                    color: #ec2a2a;
+                                }
+                                .note-rejected{
+                                    background-color: #e6e9ed;
+                                    color: #414141;
+                                }
+                            }
+                        }
+                        .footer-detail{
+                            text-align: center;
+                            padding: 40px 0 0 0;
+                            margin: 0 auto;
+                            .btn-close{
+                                padding: 13px 84px;
+                                text-align: center;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

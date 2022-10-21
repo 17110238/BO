@@ -1,0 +1,1789 @@
+.payment-button {
+  .box-payment {
+    padding: 0 !important;
+  }
+  // .header-title-payment {
+  //   padding: 0 20px;
+  //   border-bottom: 1px solid rgba(212, 212, 212, 1) !important;
+  //   padding-bottom: 0 !important;
+  //   margin-bottom: 0 !important;
+  //   .read-document {
+  //     margin: 0 25px !important;
+  //   }
+  // }
+
+  .table-payment-button {
+    padding: 0 20px;
+  }
+
+  .form-payment-button {
+    padding: 0 20px;
+
+    .btn-search {
+      margin: 0 15px;
+      margin-top: 6px;
+    }
+    .btn-clear {
+      padding-left: 5px;
+      margin: 0px;
+      margin-top: 6px;
+    }
+  }
+
+  .react-tabs__tab-list {
+    margin: 0;
+    padding-bottom: 1px;
+    border-bottom: 0 !important;
+    .react-tabs__tab {
+      padding: 0;
+    }
+    .react-tabs__tab--selected {
+      border-bottom: 3px solid #00a500;
+    }
+    .title-payment {
+      padding: 15px 0;
+      margin: 0 15px;
+    }
+  }
+
+  .btn-get-code {
+    font-weight: bold;
+    color: #00a500;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.input-icon:hover {
+  cursor: pointer;
+}
+.input-icon:hover + .Input.Input--Currency.Input--noMargin {
+  opacity: 1 !important;
+  width: 50% !important;
+}
+
+.paymentButtonNew {
+  display: flex;
+  min-height: 100vh;
+  min-width: 854px;
+  padding-top: 50px;
+  background: #f8f9fb;
+  .wrapper-type-button {
+    // padding: 0 15%;
+  }
+  // .PaymentButton-Create-TopBar {
+  //   position: fixed;
+  //   width: 100%;
+  //   padding: 9px 12px;
+  //   line-height: 32px;
+  //   top: 0;
+  //   min-width: 854px;
+  //   color: #fff;
+  //   background-color: #2f3445;
+  //   box-shadow: 0 2px 24px 0 #ccc;
+  //   z-index: 2;
+  // }
+  .overlay-choose-type {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    padding-top: 65px;
+  }
+  .btn-back-dashboard {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+  .txt-description {
+    color: #fff;
+  }
+}
+
+.SubscriptionButtonsNew_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background: #fff;
+  color: #403f6d;
+  a {
+    color: #403f6d;
+  }
+  // padding: 0 15%;
+  font-weight: 600;
+}
+
+// copy from razor payment buttons
+#payment-buttons-create-container .PaymentButton-Create-Content .PaymentButton-Create-Content-container {
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  // box-shadow: 0 0 10px rgba(11, 112,231, 0.8);
+  background: #f8f9fb;
+}
+#payment-buttons-create-container .PaymentButton-Create-SideBar,
+#payment-buttons-create-container .PaymentButton-Create-Form,
+#payment-buttons-create-container .PaymentButton-Create-Preview {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+}
+#payment-buttons-create-container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 854px;
+  padding-top: 50px;
+  background: #f8f9fb;
+}
+
+#payment-buttons-create-container .PaymentButton-Create-TopBar {
+  position: fixed;
+  width: 100%;
+  padding: 16px 12px;
+  line-height: 32px;
+  top: 0;
+  min-width: 854px;
+  color: #272b41;
+  background-color: #ffffff;
+  box-shadow: 0 0px 12px 2px #0000001a;
+  z-index: 2;
+}
+#payment-buttons-create-container .PaymentButton-Create-Content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1272px;
+  min-width: 854px;
+}
+
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: table;
+  position: relative;
+}
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container .TopBar-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container .TopBar-actions {
+  float: right;
+  margin-right: 56px;
+}
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container .TopBar-actions {
+  float: right;
+  margin-right: 56px;
+}
+#payment-buttons-create-container .PaymentButton-Create-TopBar .TopBar-container .payment-receipt-btn {
+  background: rgba(224, 228, 249, 0.24);
+  border-radius: 2px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0px 10px;
+}
+#payment-buttons-create-container .PaymentButton-Create-SideBar,
+#payment-buttons-create-container .PaymentButton-Create-Form,
+#payment-buttons-create-container .PaymentButton-Create-Preview {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+}
+.PaymentButton-Create-SideBar {
+  position: relative;
+  width: 300px;
+  padding: 32px;
+  padding-bottom: 256px;
+  border-right: 1px solid rgba(22, 47, 86, 0.1);
+}
+.PaymentButton-Create-SideBar img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.PaymentButton-Create-SideBar .SideBar-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+.ProgressBar {
+  position: relative;
+  margin: 0 auto;
+}
+.ProgressBar .ProgressBar-title {
+  font-size: 13px;
+  line-height: 14px;
+  color: #647081;
+  margin-bottom: 8px;
+}
+.ProgressBar .ProgressBar-meter {
+  position: relative;
+  height: 4px;
+  background: rgba(22, 47, 86, 0.1);
+}
+.PaymentButton-Create-SideBar {
+  position: relative;
+  width: 300px;
+  padding: 32px;
+  padding-bottom: 256px;
+  border-right: 1px solid rgba(22, 47, 86, 0.1);
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList {
+  list-style: none;
+  margin: 16px 0 24px 0;
+  padding: 0;
+  position: relative;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step {
+  position: relative;
+  padding: 16px 0;
+  margin: 0;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-dot {
+  position: relative;
+  height: 14px;
+  width: 14px;
+  margin: 2px 8px 0 0;
+  border-radius: 50%;
+  border: 3px solid #d8d8d8;
+  transition: 0.4s;
+  z-index: 1;
+  background: #fafbfe;
+  right: -2px;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-dot,
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-title {
+  display: inline-block;
+  vertical-align: top;
+  color: #647081;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-description {
+  font-size: 11px;
+  line-height: 14px;
+  color: rgba(22, 47, 86, 0.54);
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step--disabled .step-dot {
+  color: #d8d8d8;
+  border: none;
+}
+i.i-outline-lock:before,
+.icon.i-outline-lock:after {
+  content: "\f163";
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-dot .i-check-circle {
+  position: relative;
+  line-height: 16px;
+  left: -2px;
+  top: -2px;
+  color: #8cbe85;
+  opacity: 0;
+  transition: 0.12s;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step-dot .fa-check {
+  position: relative;
+  line-height: 16px;
+  left: -1px;
+  top: -1px;
+  opacity: 0;
+  -webkit-transition: 0.12s;
+  -moz-transition: 0.12s;
+  transition: 0.12s;
+  background: #8cbe85;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  width: 14px;
+  height: 14px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.PaymentButton-Create-SideBar .SideBar-stepsList .step:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgba(22, 47, 86, 0.1);
+  left: 8px;
+  top: -50%;
+}
+i.i-check-circle:before,
+.icon.i-check-circle:after {
+  content: "\f11b";
+}
+// middle
+#payment-buttons-create-container .PaymentButton-Create-SideBar,
+#payment-buttons-create-container .PaymentButton-Create-Form,
+#payment-buttons-create-container .PaymentButton-Create-Preview {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+}
+.PaymentButton-Create-Form {
+  position: relative;
+  background: #fff;
+  border: none !important;
+  min-width: 1000px;
+  // box-shadow: 0 0 15px rgba(11,112,231,.8);
+}
+.PaymentButton-Create-Form .Form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  padding: 32px 13px;
+}
+.PaymentButton-Create-Form .Form-title {
+  margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #162f56;
+}
+.PaymentButton-Create-Form .Form-description {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #647081;
+}
+.PaymentButton-Create-Form .Form {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-ButtonDetails {
+  align-content: flex-start;
+  .was-validated .form-control:valid,
+  .form-control.is-valid {
+    border: 1px solid #eff2f7 !important;
+  }
+  .form-control {
+    font-weight: 600 !important;
+  }
+  .Input-desc {
+    font-weight: 600 !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+.PaymentButton-Create-Form .Form-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Input {
+  font-weight: normal;
+  display: block;
+  margin: 24px 0 8px;
+  position: relative;
+}
+.Input--vTop .Input-label,
+.InputGroup--vTop .Input-label {
+  top: 0 !important;
+}
+.Input-label {
+  font-weight: bold;
+  position: relative;
+}
+.Input-label {
+  margin-bottom: 4px;
+}
+.Input--required .Input-label::after {
+  content: "*";
+  font-size: 12px;
+  position: absolute;
+  margin-left: 1px;
+  top: 0;
+  color: #f05050;
+}
+.Input .Input-content {
+  position: relative;
+}
+.PaymentButton-Create-Form .Form-content .Input-desc {
+  color: rgba(22, 47, 86, 0.38);
+  overflow-wrap: break-word;
+}
+.Input-desc {
+  margin: 6px 0;
+  color: #8e8e8e;
+  font-size: 11px;
+  white-space: normal;
+}
+// right
+#payment-buttons-create-container .PaymentButton-Create-SideBar,
+#payment-buttons-create-container .PaymentButton-Create-Form,
+#payment-buttons-create-container .PaymentButton-Create-Preview {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+  border: none !important;
+}
+.PaymentButton-Create-Preview {
+  position: relative;
+  width: 300px;
+  padding: 32px 28px;
+  border-left: 1px solid rgba(22, 47, 86, 0.1);
+  overflow: hidden;
+  transition: 0.1s;
+}
+
+.PaymentButton-Create-Content-container .ButtonDetailsPreview {
+  display: inline-block;
+  height: 40px;
+}
+.PaymentButton-Create-Preview .ButtonDetailsPreview {
+  margin: 28px auto;
+}
+.PaymentButton-Create-Preview .Preview-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #272b41;
+  margin-bottom: 8px;
+}
+
+// change color
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzp-dark-standard {
+  background: #072654;
+  border-color: #6e75d8 !important;
+  background: #fcfcfc;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzp-dark-standard__DARK {
+  border-color: #6e75d8 !important;
+  background: #253b48;
+  color: #fff !important;
+}
+
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzp-dark-standard__LIGHT {
+  border-color: #fff !important;
+  box-shadow: 0 3px 13px 0px #75757533;
+  background: #fcfcfc !important;
+  color: #253b48 !important;
+  .txt-payme {
+    color: #000 !important;
+  }
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzp-dark-standard__OUTLINE {
+  border-color: #6e75d8 !important;
+  background: #eaf2fe;
+  color: #253b48 !important;
+  .txt-payme {
+    color: #000 !important;
+  }
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzp-dark-standard__BRAND_COLOR {
+  border: none !important;
+  background: #5a5f70;
+  color: #fff !important;
+  background: linear-gradient(258deg, #e0a02d 98%, #f3b037 0%);
+  &::before {
+    background: #5a5f70 !important;
+  }
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--dark {
+  color: #253b48;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button {
+  position: relative;
+  display: inline-block;
+  min-width: 215px;
+  height: 48px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  // font-family: Muli, helvetica, sans-serif;
+  overflow: hidden;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzpTheme::before {
+  // content: "";
+  // position: absolute;
+  // left: -6px;
+  // top: 0;
+  // width: 46px;
+  // height: 100%;
+  // background: #1e40a0;
+  // background: #253b48;
+  // border-radius: 2px 0 0 2px;
+  // transform: skew(-15deg, 0);
+}
+.PaymentButton-Create-Content-container svg {
+  position: absolute;
+  right: 8px;
+  margin: 7px 5px;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button--rzpTheme .PaymentButton-Button-contents {
+  padding-left: 0px;
+  line-height: 0.5;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button-contents {
+  padding: 9px 28px 4px 44px;
+  margin: 1px 0;
+  .txt-payme {
+    font-weight: 550;
+    color: #fff;
+    font-size: 8px;
+  }
+}
+
+.PaymentButton-Create-Content-container .PaymentButton-Button-text {
+  display: block;
+  min-height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 550;
+  opacity: 1;
+}
+.PaymentButton-Create-Content-container .PaymentButton-Button-rzpBranding {
+  opacity: 0.6;
+  font-size: 8px;
+  line-height: 10px;
+  margin-right: 2px;
+}
+.GuideBox {
+  background: #fff;
+  border: 1px solid rgba(22, 47, 86, 0.1);
+  // box-shadow: 0px 0px 15px rgba(11, 112, 231,.8);
+  border-radius: 6px;
+  position: absolute;
+  bottom: 8%;
+  padding: 14px 20px;
+  width: 240px;
+  box-shadow: 0 5px 11px 1px rgba(219, 219, 219, 0.5);
+  // margin: 0 0 0 26.4px;
+  // padding: 93px 343px 237px 23px;
+  // border-radius: 10px;
+  .title {
+    color: #647081;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .doc-link {
+    font-weight: bold;
+    color: #00be00;
+
+    display: block;
+  }
+}
+
+.PaymentButton-Create-Form .Form-content .Input--CurrencyAmount .Input--Currency {
+  position: absolute;
+  left: -65px;
+  top: -5px;
+  width: 48px;
+  font-size: 13px;
+  height: 24px;
+  margin: 0;
+  z-index: 2;
+  background: rgba(224, 228, 249, 0.38);
+  border-radius: 2px;
+}
+.Input.Input--Currency.Input--noMargin {
+  opacity: 0;
+  transition: 0.7s all;
+}
+.Input--Currency.Input--noMargin .value.tooltip-custom {
+  padding: 0 2px;
+  background-color: #f0f3f4;
+  color: #57666d;
+  min-width: 36px;
+  line-height: 34px;
+  display: inline-block;
+  margin-right: -4px;
+  border: 1px solid #e2e2e2;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: transparent;
+}
+
+.Input--Currency.Input--noMargin {
+  width: 36px;
+  text-align: center;
+}
+
+.PaymentButton-Create-Form .Form-content .Input--CurrencyAmount .Input--Currency .value {
+  border: none;
+  line-height: 35px;
+  margin: 0;
+  // width: 230px;
+  height: 35px;
+  background: #2f3445 !important;
+  color: #fff;
+}
+.PaymentButton-Create-Form .Modal-container--CreatorModal-BaseForm .Input--Currency .value,
+.PaymentButton-Create-Form .Input--CurrencyAmount .Input--Currency .value,
+.PaymentButton-Create-Form .PaymentButtonForm-AmountDetails--donation .Input--limits .Input--Currency .value {
+  background: none;
+  border: none;
+  line-height: 24px;
+  margin: 0;
+}
+
+.Input--Currency.Input--noMargin {
+  width: 36px;
+  text-align: center;
+}
+.Input {
+  font-weight: normal;
+  display: block;
+  margin: 24px 0 8px;
+  position: relative;
+  width: 50%;
+}
+.PaymentButton-Create-Form .Form-controls {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 72px;
+}
+#payment-buttons-create-container {
+  .input-container .input-icon {
+    color: #afafaf;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .input-container .input-icon.icon-left {
+    left: 35px;
+  }
+}
+
+// PREVIEW
+
+.PaymentButton-Create-Preview .PaymentButton-PreviewFormShell {
+  margin: 28px auto;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form > div {
+  overflow-y: scroll;
+  max-height: 220px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.PaymentButton-PreviewFormShell {
+  position: relative;
+  width: 240px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px #00000014;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 20px;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-header {
+  padding: 16px;
+  overflow: hidden;
+  height: 76px;
+  background: #fff;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-header::before {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background: linear-gradient(251deg, #e0a02d 98%, #f3b037 0%);
+}
+
+.PaymentButton-PreviewFormShell .Preview-topbar {
+  position: relative;
+  color: #fff;
+  top: -8px;
+}
+.PaymentButton-PreviewFormShell .Preview-topbar-title {
+  margin-right: 96px;
+  height: 16px;
+  font-size: 8px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+.PaymentButton-PreviewFormShell .Preview-controls {
+  width: 96px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 16px;
+}
+.PaymentButton-PreviewFormShell .Preview-progressDots {
+  height: 16px;
+}
+.PaymentButton-PreviewFormShell .Preview-progressDots,
+.PaymentButton-PreviewFormShell .Preview-cross {
+  display: inline-block;
+}
+.PaymentButton-PreviewFormShell .Preview-progressDots span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 3px 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.PaymentButton-PreviewFormShell .Preview-progressDots span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 3px 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.PaymentButton-PreviewFormShell .Preview-cross {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  line-height: 15px;
+  font-size: 15px;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+}
+.PaymentButton-PreviewFormShell .Preview-progressDots,
+.PaymentButton-PreviewFormShell .Preview-cross {
+  display: inline-block;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form {
+  height: 312px;
+  padding: 16px 16px 48px;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field-dummy-btn {
+  position: absolute;
+  height: 38px;
+  width: 88%;
+  padding: 0;
+  bottom: 18px;
+
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 16px;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy {
+  position: relative;
+  opacity: 0;
+  animation: 0.15s fadeIn 0.2s cubic-bezier(0.95, 0.11, 1, 1) forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.48;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy:not(:first-of-type) {
+  margin-top: 24px;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy {
+  position: relative;
+  opacity: 0;
+  animation: 0.15s fadeIn 0.2s cubic-bezier(0.95, 0.11, 1, 1) forwards;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field-dummy-btn {
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy .Field-label {
+  font-size: 9px;
+  margin-bottom: 1px;
+  font-weight: 700;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy--udf .Field-el {
+  // height: 18px;
+  height: 28px;
+  border-bottom: 1px solid #e6e7e8;
+  background: #eff2f7;
+  border-radius: 11px;
+}
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy .Field-description {
+  font-size: 8px;
+  color: #828282;
+  margin-top: 4px;
+  overflow-wrap: break-word;
+}
+
+.PaymentButton-PreviewFormShell .PreviewFormShell-header-details {
+  white-space: nowrap;
+  position: relative;
+  margin-top: -2px;
+}
+
+.PaymentButton-PreviewFormShell .header-details-merchant-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.PaymentButton-PreviewFormShell .header-details-amount {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 12px;
+  opacity: 0.8;
+  margin-top: 3px;
+}
+// step2 form mid
+
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails {
+  flex-direction: column;
+  justify-content: unset;
+  .form-control {
+    font-weight: 600 !important;
+  }
+}
+
+.PaymentButton-Create-Form .Form-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails .EditableDisplayField,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails .EditableDisplayField {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: -24px -24px 16px -24px;
+  padding: 24px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails .EditableDisplayField:not(.EditableDisplayField--disabled)::before,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails .EditableDisplayField:not(.EditableDisplayField--disabled)::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 4px 10px #0b70e71a;
+  border-radius: 3px;
+  transition: 0.12s;
+  opacity: 0;
+  transform: scale(0.97);
+  pointer-events: none;
+}
+
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails .EditableDisplayField .edit-btn,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails .EditableDisplayField .edit-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  font-size: 11px;
+  pointer-events: none;
+}
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails .EditableDisplayField .Input--dummy,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails .EditableDisplayField .Input--dummy {
+  margin: 0;
+  pointer-events: none;
+}
+
+.PaymentButton-Create-Form .Form-content .Input {
+  margin: 0 0 40px 0;
+}
+.PaymentButton-Create-Form .addFieldBtn {
+  width: 240px;
+  height: 36px;
+  background: rgba(11, 112, 231, 0.05);
+}
+.Button--primary--invert {
+  padding: 5px 11px;
+  border-color: #00be00 !important;
+  color: #00be00 !important;
+}
+
+.Button {
+  background: #fbfbfb;
+  color: #414141;
+  padding: 10px 20px;
+  line-height: 16px;
+  border-radius: 2px;
+  border: 1px solid #e6e7e8;
+  outline: none;
+  margin-right: 12px;
+  transition: 0.15s, 0.3s border;
+}
+// success
+.PaymentButton-Create-SuccessView {
+  min-width: 930px;
+}
+.PaymentButton-Create-SuccessView .Form-buttonIntegration,
+.embed-button-form {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid #edf0f5;
+  background: #eff2f7;
+  // box-shadow: 2px 4px 8px #0000001a;
+  border-radius: 10px;
+
+  .help-text {
+    color: #647081;
+  }
+  .Input--codeCopy .Input-el,
+  textarea {
+    border: 1px solid #e6e6e6 !important;
+    border-radius: 5px;
+    min-width: 363px;
+    min-height: 100px;
+  }
+  .Button {
+    background: #f2f2f2;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-title {
+  margin-bottom: 4px;
+}
+.Form-buttonIntegration-code {
+  width: 49% !important;
+}
+.Form-buttonIntegration-others {
+  width: 47% !important;
+  margin-left: 26px;
+}
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code {
+  padding-right: 64px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code,
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-others {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code > *,
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-others > * {
+  margin-top: 8px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code .help-text {
+  margin-top: 12px;
+}
+.help-text {
+  line-height: 20px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code .ClipboardCustom {
+  float: right;
+  margin-top: -2px;
+}
+.ClipboardCustom {
+  display: inline-block;
+  font-weight: normal;
+  border-radius: 4px;
+  background: #15bd30;
+  .btn-copy-code {
+    height: 25px;
+    font-size: 11px;
+  }
+}
+.ClipboardCustom__Input {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -9999px;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[data-tip] {
+  position: relative;
+}
+[data-tip][data-event="active"]:after,
+[data-tip][data-event="active"]:before {
+  transition-delay: 2s;
+}
+[data-tip]:before {
+  content: "";
+  border: 7px solid transparent;
+  border-top-color: #222;
+  margin: -7px 0 -7px;
+}
+[data-tip]:before,
+[data-tip]:after {
+  opacity: 0;
+  transform: translateX(-50%) translateY(6px) scale(0.92);
+  left: 50%;
+  bottom: 100%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.17s, 0.3s transform;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code .Button {
+  line-height: 12px;
+
+  padding: 7px 20px !important;
+  margin-right: 0;
+}
+.PaymentButton-Create-SuccessView .Form-buttonIntegration .Form-buttonIntegration-code .Input--codeCopy .Input-el,
+.embed-button-form .Input-el {
+  height: 80px;
+  font-size: 13px;
+  padding: 6px 12px;
+}
+textarea.Input-el {
+  min-height: 36px;
+  max-height: 90px;
+  height: 60px;
+  line-height: 20px;
+  resize: vertical;
+  padding: 10px 12px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonActions {
+  width: 100%;
+  margin-top: 25px;
+  padding-left: 3%;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-title {
+  font-size: 16px;
+  // margin-bottom: 8px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-receipt {
+  padding-right: 64px;
+  .Button {
+    background: #f2f2f2;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 6px 16px !important;
+  }
+}
+.Form-buttonActions-postPayment {
+  .Button {
+    background: #f2f2f2;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 6px 16px !important;
+    margin-right: 0;
+    margin-left: 15%;
+  }
+}
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-receipt,
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-postPayment {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-receipt > div,
+.PaymentButton-Create-SuccessView .Form-buttonActions .Form-buttonActions-postPayment > div {
+  // margin-top: 8px;
+}
+.help-text {
+  line-height: 20px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.PaymentButton-Create-SuccessView .Form-buttonActions .help-text-settings {
+  margin-top: 16px;
+  font-size: 12px;
+}
+.help-text {
+  line-height: 20px;
+  text-align: left;
+  font-size: 13px;
+  color: #647081;
+}
+
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails .EditableDisplayField:not(.EditableDisplayField--disabled):hover::before,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails .EditableDisplayField:not(.EditableDisplayField--disabled):hover::before {
+  pointer-events: unset;
+  opacity: 1;
+  transform: scale(1);
+}
+.EditableDisplayField:hover .btn.btn-link.edit-btn {
+  display: block;
+}
+
+.PaymentButton-Create-Form .CreatorModal-BaseForm,
+.PaymentButton-Create-Form .CreatorModal-AdvancedForm {
+  background: rgba(32, 31, 45, 0.55);
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 2px 8px 0 #2b2f3c5c;
+  animation: 0.55s fadeIn cubic-bezier(0.08, 0.98, 1, 1);
+}
+
+.PaymentButton-Create-Form .Modal-container--CreatorModal-BaseForm::before {
+  content: "";
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(43, 47, 60, 0.36);
+  pointer-events: all;
+}
+.PaymentButton-Create-Form .Modal-container--CreatorModal-BaseForm .mimic-expand {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  height: 100%;
+  background: #fff;
+  animation: modalAppearIn-EditableDisplayField 0.3s 0.08s cubic-bezier(0.53, 1.78, 1, 1) forwards;
+  transform-origin: center;
+  transform: scale(0.97);
+  border: 1px solid #edf0f5;
+  border-radius: 10px;
+}
+
+.PaymentButton-Create-Form .Modal-content--PaymentButton-CreateForm .Form {
+  display: flex;
+  justify-content: space-between;
+}
+.PaymentButton-Create-Form .Form {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.PaymentButton-Create-Form .Modal-container--CreatorModal-BaseForm {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  transform: translateY(-50%);
+  overflow: unset;
+  padding: 24px 20px 50px 20px;
+  background: transparent;
+  margin-bottom: 120px;
+  margin-top: 4px;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+}
+.PaymentButton-Create-Form .Modal-content--PaymentButton-CreateForm .Form {
+  display: flex;
+  justify-content: space-between;
+}
+.PaymentButton-Create-Form .Modal-content--PaymentButton-CreateForm .Form .Input {
+  margin: 0;
+}
+.PaymentButton-Create-Form .Form-content .Input--PowerSelect,
+.PaymentButton-Create-Form .Form-content .Input--Currency--fullDisplay {
+  padding: 0;
+}
+.PaymentButton-Create-Form .CreatorModal-BaseForm-footer {
+  position: relative;
+  bottom: -30px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  left: -11px;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  a {
+    background: #eff2f7;
+    padding: 14px 13px 13.6px;
+    color: #00be00;
+    height: 36px;
+  }
+  button {
+    width: 80px;
+    // height: initial !important
+  }
+}
+.PaymentButton-Create-Form .Modal-container .OptionsDropdown {
+  position: absolute;
+  top: 36px;
+  right: -25px;
+}
+.PaymentButton-Create-Form .Modal-container .dropdown__trigger {
+  width: 30px;
+  display: inline-block;
+  height: 32px;
+  text-align: center;
+  padding: 4px;
+  color: #2b83ea;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+.PaymentButton-Create-Form .Modal-container .dropdown__trigger button {
+  margin-right: 0;
+  color: #2b83ea;
+  font-size: 24px;
+  line-height: 24px;
+}
+.PaymentButton-Create-Form .Modal-container--CreatorModal-BaseForm .Alert {
+  position: relative;
+  margin-left: -29px;
+  margin-right: -29px;
+  bottom: -59px;
+  padding: 12px 16px;
+  font-size: 13px;
+  border: none;
+  color: #8a6d6b;
+  border-radius: 0 0 12px 12px !important;
+}
+.Alert--warning {
+  border-color: #cdc4a8;
+  background: #fff6da;
+}
+.Alert {
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 2px;
+  color: #4d4d4d;
+  margin-bottom: 12px;
+}
+.Alert .Alert-content {
+  display: inline-block;
+  width: 100%;
+}
+.PaymentButton-Create-Form .Modal-container .OptionsDropdown-list {
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: dropdownAppearInCenter;
+  animation-duration: 0.12s;
+}
+@keyframes dropdownAppearInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.dropdown--active > .dropdown__content > .dropdown-menu {
+  display: block;
+}
+.PaymentButton-Create-Form .OptionsDropdown-list {
+  margin-bottom: 40px;
+  width: 224px;
+  max-height: 252px;
+  top: 100% !important;
+  right: -45px !important;
+  border-radius: 4px;
+  border: 1px solid rgba(82, 143, 240, 0.16);
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 5px 9px 0 #454b5538;
+  animation: dropdownAppearIn 0.1s cubic-bezier(0.13, 1.04, 1, 1);
+  transform-origin: center bottom;
+}
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+.dropdown--active > .dropdown__content > .dropdown-menu {
+  display: block;
+}
+.PaymentButton-Create-Form .dropdown__content {
+  position: relative;
+}
+.PaymentButton-Create-Form .OptionsDropdown-title {
+  margin: 8px 12px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.PaymentButton-Create-Form .FieldOptionsDropdown .OptionsDropdown-item > div {
+  padding: 6px 12px;
+}
+.PaymentButton-Create-Form .FieldOptionsDropdown .OptionsDropdown-item {
+  padding: 0;
+}
+.PaymentButton-Create-Form .OptionsDropdown-item {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 6px 12px;
+  line-height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-stacked > li {
+  float: none;
+}
+.PaymentButton-Create-Form .OptionsDropdown-item:hover {
+  background-color: #f5f7f9;
+}
+.Input-elWrapper {
+  position: relative;
+
+  vertical-align: top;
+  line-height: 32px;
+  font-weight: 700;
+  min-height: 42px;
+}
+.PaymentButton-Create-Form .Form-content .Input {
+  width: 50%;
+  margin: 0 0 0px;
+}
+
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-CustomerDetails,
+.PaymentButton-Create-Form .Form-content.PaymentButtonForm-AmountDetails {
+  flex-direction: column;
+  justify-content: unset;
+}
+.PaymentButton-Create-Form .Form-content .InputGroup .Input {
+  margin: 0;
+}
+.PaymentButton-Create-Form .Form-content .InputGroup .Input {
+  width: 100%;
+  display: block;
+}
+.PaymentButton-Create-Form .Form-content .Input--PowerSelect,
+.PaymentButton-Create-Form .Form-content .Input--Currency--fullDisplay {
+  padding: 0;
+}
+.Input:not(.Input--vTop) .Input-label,
+.InputGroup:not(.InputGroup--vTop) .Input-label {
+  top: 7px;
+}
+.Input--vTop .Input-label,
+.InputGroup--vTop .Input-label {
+  top: 0 !important;
+}
+// .help-content--currency .rzp-popover.rzp-tooltip,
+// .help-content--currency .rzp-tooltip-inner {
+//   width: unset;
+//   min-width: 152px;
+//   padding: 8px 16px !important;
+//   margin-top: 4px;
+// }
+.rzp-popover.rzp-tooltip {
+  display: block;
+  width: 260px;
+  font-size: 1rem;
+  font-size: 12px;
+}
+.rzp-popover.rzp-tooltip {
+  width: 300px !important;
+}
+.rzp-tooltip.theme-dark {
+  color: #fff;
+}
+
+.Input.Input--Currency.Input--Currency--fullDisplay.Input--vTop.donate {
+  text-align: center;
+  .value {
+    padding: 0 2px;
+    background-color: #f0f3f4;
+    color: #57666d;
+    min-width: 36px;
+    line-height: 34px;
+    display: inline-block;
+    margin-right: -4px;
+    border: 1px solid #e2e2e2;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: transparent;
+    cursor: pointer;
+  }
+}
+
+.GetCodeModal {
+  .modal-info-text {
+    width: 100%;
+  }
+  .embed-button-form {
+    background: #fff;
+    border: 1px solid rgba(22, 47, 86, 0.1);
+    box-shadow: 0 2px 8px #00000026;
+    border-radius: 3px;
+    word-break: break-all;
+    position: relative;
+    margin: 16px -48px 16px;
+    padding: 24px;
+    margin-left: -48px;
+    margin-right: -48px;
+    .Input {
+      width: 100%;
+    }
+    margin: 0 auto;
+
+    margin: 25px 0;
+  }
+}
+.GetCodeModal .embed-button-form .description {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.embed-button-form .description {
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  color: #7f849c;
+}
+.remove-preset-btn {
+  position: relative;
+  right: -24px;
+  cursor: pointer;
+  opacity: 0.9;
+  top: -30px;
+  left: 100%;
+}
+
+.PaymentButton-PreviewFormShell .PreviewFormShell-checkout-form .Field--dummy--amount .Field-el {
+  height: 28px;
+  padding: 0 8px;
+  line-height: 25px;
+  font-size: 10px;
+  border: 1px solid #e6e7e8;
+  border-radius: 2px;
+  font-weight: bold;
+  background: #eff2f7;
+  border-radius: 11px;
+}
+.nav:after {
+  clear: both;
+}
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.PaymentButton-Create-Form {
+  border: none !important;
+}
+
+.step-active {
+  .step-dot {
+    border: 3px solid #00be00 !important;
+  }
+  .step-title {
+    font-weight: bold !important;
+    color: #0b0b0b !important    ;
+  }
+}
+
+.PaymentButton-Create-Form {
+  .Form-title {
+    margin-bottom: 26px;
+    padding-left: 15px;
+  }
+  .Form {
+    // margin: -15px;
+
+    .form-label {
+      margin-bottom: 0;
+      .Input-label {
+        top: 3px !important;
+        font-weight: 550;
+        margin-bottom: 0;
+      }
+    }
+    .line-2 {
+      .Input-label {
+        top: -3px !important;
+      }
+    }
+  }
+  .Form-content {
+    .Input-desc {
+      margin-bottom: 15px;
+    }
+  }
+}
+.btn-control {
+  position: relative;
+  bottom: 10%;
+  right: 15px;
+}
+.btn-next-step {
+  width: 140px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(251deg, #00be00, #00a500);
+}
+.btn-back {
+  width: 140px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eff2f7;
+  color: #00be00;
+  font-weight: 600;
+  margin-right: 19px;
+}
+
+.line-preview {
+  opacity: 0.3;
+  position: relative;
+  left: -15px;
+  width: 115%;
+}
+
+.Modal-content.Modal-content--PaymentButton-CreateForm {
+  position: relative;
+}
+
+.field-label-custom {
+  display: flex;
+  align-items: center;
+  .Input-desc {
+    position: relative;
+    top: 3px;
+    margin-left: 15px !important;
+  }
+}
+
+.btn-back-dashboard {
+  font-size: 14px !important;
+  padding: 5px 27px !important;
+}
+
+.id-payment-button {
+  color: #647081;
+  font-size: 14px;
+  margin-left: 10px;
+}
+div#payment-buttons-create-container {
+  .PaymentButton-Create-TopBar.Payment-Create-TopBar {
+    padding: 12px;
+  }
+
+  .TopBar-title {
+    padding-left: 111px !important;
+  }
+  .save-public-btn {
+    left: 175px !important;
+  }
+}
+
+// EDIT
+
+li.step-edit {
+  list-style: none;
+  padding: 9px 15px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  margin-right: -30px;
+  &-active {
+    background: #e9fbec;
+    color: #00be00;
+  }
+}
+.payment-buttons-edit {
+  .form-control:disabled,
+  .form-control[readonly] {
+    cursor: not-allowed;
+  }
+}
+
+.FormBasicEdit {
+  .form-control {
+    font-weight: bold;
+    background: #fff;
+    border: 1px dashed #d0d0d0;
+  }
+  // .input-basic-edit {
+  // }
+  .custom-checkbox {
+    position: absolute;
+    right: 2%;
+    top: 10px;
+  }
+}
+
+.PreviewTestButton {
+  background: url(/assets/img/payment-button/background-preview.svg) no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  .form-test-button {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 769px;
+    width: 100%;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 10px 17px 11px #0000000f;
+  }
+  .wrapper-test {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    &__left {
+      .txt-test {
+        font-size: 25px;
+        font-weight: 650;
+      }
+      .txt-add {
+        color: #647081;
+      }
+      textarea {
+        border: 1px dashed #d8d8d8;
+        border-radius: 5px;
+        color: #647081;
+        background: #eff2f7;
+        width: 100%;
+        min-height: 100px;
+        padding: 10px 18px;
+      }
+      .btn-run-code {
+        padding: 20px 30px;
+        margin-top: 25px;
+        &-disable {
+          background: #d8d8d8;
+          padding: 20px 30px;
+          margin-top: 25px;
+          border: none;
+        }
+      }
+      .GuideBox {
+        position: unset;
+        border: none;
+      }
+    }
+    &__right {
+      text-align: center;
+      .result-preview {
+        position: absolute;
+        top: 45%;
+        max-width: 185px;
+        width: 100%;
+        left: 12%;
+        color: #647081;
+      }
+      .phone-img {
+        max-width: 242px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.btn-cancel-save,
+.table-stock,
+.pair-group-item__right {
+  animation-name: dropdownAppearInCenter;
+  animation-duration: 0.12s;
+}
+
+#paymebutton-embed {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  height: 100%;
+  width: 95%;
+  height: 97.5%;
+}
+iframe#iframeButton {
+  animation: 0.55s fadeIn cubic-bezier(0.08, 0.98, 1, 1);
+  height: 100%;
+  margin-top: 7px !important;
+  width: 95%;
+  // margin-left: 7px !important;
+}
+.wrapper-striped {
+  animation: 0.55s fadeIn cubic-bezier(0.08, 0.98, 1, 1);
+
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 70%;
+}
+.striped-preview {
+  width: 100%;
+  height: 14px;
+  margin: 0;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-option{
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #04a904;
+
+}

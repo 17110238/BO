@@ -1,0 +1,21 @@
+.btn.disableHover {
+  border-color: #39a7ff;
+  color: #39a7ff;
+  background-color: #fff;
+  margin-left: 15px;
+  img {
+    padding-right: 5px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: #39a7ff;
+    border-color: #39a7ff;
+  }
+}
+
+.search-button-group {
+  @media screen and (max-width: 1199px) {
+    margin-left: 15px;
+  }
+}

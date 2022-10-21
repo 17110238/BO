@@ -1,0 +1,371 @@
+.approval-wallet-kyc-container {
+  &__box-search {
+    @media screen and (min-width: 1920px) {
+      form {
+        .form-date {
+          max-width: 500px;
+        }
+      }
+    }
+    @media screen and (min-width: 1600px) {
+      form {
+        .form-MC-state {
+          max-width: 300px !important;
+        }
+      }
+    }
+    @media screen and (max-width: 1604px) {
+      form {
+        .form-search,
+        .form-MC-state {
+          width: 50%;
+          max-width: unset !important;
+        }
+      }
+    }
+    @media screen and (max-width: 750px) {
+      padding-right: 0 !important;
+      form {
+        .form-MC-state {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.approval-auto-wallet-kyc-container {
+  &__box-search {
+    form {
+      .form-date {
+        max-width: 500px;
+      }
+      @media screen and (min-width: 1920px) {
+        .form-MC-state {
+          max-width: 300px !important;
+        }
+      }
+      @media screen and (max-width: 1919px) {
+        .form-search {
+          width: 40%;
+          max-width: unset !important;
+        }
+        .form-MC-state {
+          width: 30%;
+          max-width: unset !important;
+        }
+      }
+      @media screen and (max-width: 1600px) {
+        .form-search {
+          width: 60%;
+        }
+        .form-MC-state {
+          width: 20%;
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        .form-search {
+          width: 100%;
+        }
+        .form-MC-state {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .form-date {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .search-button-group {
+          & > * {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-update-kyc-wallet {
+  .modal-dialog {
+    margin-top: 28px;
+    min-width: 1000px;
+    @media screen and (max-width: 1050px) {
+      min-width: 100%;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-left: 0;
+    }
+    .modal-header {
+      @media screen and (max-width: 400px) {
+        padding: 10px 1rem !important;
+      }
+    }
+    .modal-body {
+      padding: 1rem 1.75rem;
+      .form-info-kyc {
+        display: flex;
+
+        & > div {
+          width: 50%;
+        }
+        .react-tabs {
+          .inputs-group__title {
+            display: none;
+          }
+        }
+
+        .image-kyc-payme {
+          & > .inputs-group {
+            padding: 0 0 0 1rem;
+            .merchant-imgs-preview {
+              background-color: #c3c3c3;
+              border-radius: 12px;
+            }
+
+            & > .viewer-container {
+              margin-top: 0;
+              margin-right: 0;
+            }
+          }
+        }
+
+        .inputs-group {
+          .merchant-imgs-preview {
+            height: 300px;
+          }
+        }
+
+        .inputs-group-image {
+          .image-groups {
+            max-width: 300px;
+          }
+          .btn-upload {
+            position: relative;
+
+            &:hover {
+              .icon-remove {
+                display: block;
+              }
+            }
+
+            .icon-remove {
+              position: absolute;
+
+              top: -12px;
+              right: -12px;
+
+              padding: 4px;
+
+              background: white;
+
+              color: red;
+
+              display: none;
+
+              z-index: 10;
+
+              font-size: 20px;
+
+              border-radius: 50%;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .align-items-center {
+              flex-direction: column;
+              .btn-upload {
+                &:not(&:last-child) {
+                  margin-bottom: 1rem;
+                }
+              }
+            }
+          }
+        }
+
+        .form-input-tab {
+          @media screen and (max-width: 1050px) {
+            width: 100%;
+          }
+        }
+
+        @media screen and (max-width: 1050px) {
+          flex-direction: column;
+          & > .inputs-group {
+            width: 100%;
+          }
+
+          & > .image-kyc-payme {
+            width: 100%;
+            & > div {
+              padding: 0 !important;
+
+              .merchant-imgs-preview {
+                margin: 1rem 0rem;
+
+                height: 500px;
+              }
+
+              .viewer-container {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .form-btns-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn-control-kyc,
+        .btn-control-kyc-auto {
+          .btn {
+            padding: 0px 2rem;
+
+            margin-left: 1rem;
+
+            border-radius: 12px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+        .btn-control-kyc {
+          @media screen and (max-width: 575px) {
+            flex-wrap: wrap;
+            .btn-reject-kyc {
+              width: 100%;
+              margin-left: 0;
+              margin-top: 1rem;
+            }
+          }
+
+          @media screen and (max-width: 420px) {
+            .btn {
+              width: 100%;
+              margin-left: 0;
+              margin-top: 1rem;
+            }
+          }
+          @media screen and (max-width: 420px) {
+            .btn {
+              margin-top: 0;
+            }
+          }
+        }
+        .btn-control-kyc {
+          @media screen and (max-width: 375px) {
+            flex-direction: column;
+            width: 100%;
+            .btn {
+              width: 100%;
+              border-radius: 12px;
+              &:not(&:last-child) {
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+
+        .btn-control-kyc-auto {
+          @media screen and (max-width: 600px) {
+            flex-direction: column;
+            width: 100%;
+            .btn {
+              width: 100%;
+              border-radius: 12px;
+              margin-left: 0rem;
+              margin-top: 1rem;
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+
+          @media screen and (min-width: 601px) and (max-width: 800px) {
+            flex-wrap: wrap;
+            .btn {
+              flex: 1 0 auto;
+              width: calc(50% - 1rem);
+              margin-top: 1rem;
+              &:nth-of-type(2n-1) {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+
+        .btn-control .btn-clear {
+          padding: 0rem 2rem;
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: 1050px) {
+          flex-direction: column;
+          & > div {
+            width: 100%;
+            flex-grow: 1;
+
+            .btn-clear {
+              margin-top: 1rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        padding: 1rem;
+      }
+    }
+
+    .modal-footer {
+      & > div {
+        @media screen and (max-width: 500px) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    padding-right: 8px;
+  }
+}
+
+.modal-reject-kyc {
+  @media screen and (max-width: 500px) {
+    .modal-header {
+      padding: 10px 1rem !important;
+    }
+    .modal-body {
+      padding: 1rem !important;
+      form {
+        button {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.modal-history-kyc {
+  .modal-dialog {
+    min-width: 1000px;
+    .modal-content {
+      .modal-body {
+        padding: 0;
+        border-radius: none !important;
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      min-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

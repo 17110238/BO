@@ -1,0 +1,40 @@
+.modal-confirm-active {
+  max-width: 382px;
+  width: 100%;
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 62px;
+    img {
+      width: min-content;
+      margin-bottom: 22px;
+    }
+    p {
+      color: #272b41;
+      font-weight: bold;
+      font-size: 18px;
+      max-width: 278px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 47px;
+    }
+    .btn-action-group {
+      .btn {
+        height: 44px;
+        font-size: 17px;
+        font-weight: 600;
+      }
+      .btn-accept {
+        color: #00be00;
+        background: #eff2f7;
+        padding: 0 36px;
+        margin-right: 23px;
+      }
+      .btn-primary {
+        padding: 0 62px;
+      }
+    }
+  }
+}

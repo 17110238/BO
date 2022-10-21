@@ -1,0 +1,48 @@
+.modal-add-update-deposit {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        padding: 10px 30px;
+        font-weight: 600;
+        p {
+          margin: 0;
+          font-family: 'Nunito Sans';
+          font-size: 16px;
+          color: #272b41;
+
+          span {
+            font-weight: bold;
+            margin-left: 0.5rem;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .modal-body {
+        padding: 1rem;
+        form {
+          .btn-form-group {
+            padding: 0px 1rem;
+          }
+
+          .input-custom-error {
+            border: 1px solid red !important;
+          }
+
+          .search-merchant-select {
+            & > label {
+              border: none;
+              background-color: transparent;
+              margin: 0;
+              color: #647081;
+              padding-right: 0;
+              padding-left: 0;
+              font-size: 15px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

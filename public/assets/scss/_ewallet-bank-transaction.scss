@@ -1,0 +1,75 @@
+.ewallet-bank-transaction {
+  .export-btn {
+    @media screen and (max-width: 450px) {
+      margin-left: 0 !important;
+    }
+  }
+  &__box-search {
+    form {
+      .form-search {
+        min-width: 510px !important;
+        @media screen and (max-width: 1100px) {
+          min-width: 100% !important;
+        }
+      }
+
+      .groups-inputs-search-type {
+        & > input[class='form-control'] {
+          padding-right: 200px;
+          @media screen and (max-width: 450px) {
+            padding-right: 160px;
+          }
+        }
+        & > .form-control-type {
+          min-width: 200px;
+          max-width: 200px;
+          @media screen and (max-width: 450px) {
+            min-width: 160px;
+            max-width: 160px;
+          }
+        }
+      }
+
+      .form-date {
+        max-width: 500px;
+      }
+      @media screen and (min-width: 1600px) {
+        .form-MC-state {
+          max-width: 400px !important;
+        }
+      }
+      @media screen and (min-width: 1921px) {
+        .form-MC-state {
+          max-width: 250px !important;
+        }
+        .form-search {
+          max-width: 520px;
+        }
+      }
+      @media screen and (max-width: 1920px) {
+        .form-search {
+          width: 30%;
+          max-width: unset !important;
+        }
+        .form-MC-state {
+          width: 10% !important;
+          max-width: unset !important;
+        }
+      }
+
+      @media screen and (max-width: 810px) {
+        .form-date {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .search-button-group {
+          & > * {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

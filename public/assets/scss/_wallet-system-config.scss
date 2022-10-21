@@ -1,0 +1,86 @@
+.table-bank-list {
+  // .rdt_TableCell {
+  //   > .d-flex {
+  //     width: 100%;
+  //   }
+  // }
+  .bank-gateway,
+  .bank-required-date {
+    display: flex;
+    width: 100%;
+    .btn-update-gateway {
+      line-height: initial;
+      height: auto;
+      padding: 0;
+      margin-left: auto;
+      > i {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.modal-system-config {
+  z-index: 9995 !important;
+  .modal-dialog {
+    max-width: 85%;
+  }
+}
+
+.modal-add-issuer {
+  .btn-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 !important;
+    border: 1px dashed #00be00;
+    border-radius: 12px;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+  .form-group {
+    .img-box {
+      border: 1px solid #cbcbcb;
+      border-radius: 5px;
+      padding: 5px;
+      max-width: 100px;
+      position: relative;
+      .btn-remove-img {
+        display: none;
+        height: initial;
+        line-height: initial;
+        color: red;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 2px 0;
+        background: rgba(0, 0, 0, 0.418);
+        border-radius: 0;
+        margin-left: -5px;
+        transition: all 0.3s;
+      }
+      &:hover > .btn-remove-img {
+        display: block;
+      }
+    }
+  }
+}
+
+.table-issuer-list {
+  .issuer__status {
+    background: lightcyan;
+    padding: 2.5px 8px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    & {
+      &--active {
+        background: #4d77ff;
+      }
+      &--nonactive {
+        background: #fd5d5d;
+      }
+    }
+  }
+}

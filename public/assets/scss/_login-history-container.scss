@@ -1,0 +1,108 @@
+.login-history-container {
+  .btn {
+    white-space: nowrap;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+    button {
+      color: #272b41;
+      border: 1px solid #272b41;
+    }
+
+    button.btn-active {
+      color: #00be00;
+      border: 1px solid #00be00;
+    }
+  }
+
+  .box-search-login-history {
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+      border: 1px solid transparent;
+      background-color: #e2fee5;
+      color: #00be00;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 0.5rem;
+      .form-search {
+        width: calc(25% - 0.7rem);
+        &:nth-child(3) {
+          width: calc(35% - 0.7rem);
+        }
+        &:nth-child(4) {
+          width: calc(15% - 0.7rem);
+        }
+        @media screen and (max-width: 1650px) {
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: calc(23% - 0.7rem) ;
+          }
+  
+          width: calc(50% - 0.7rem) !important;
+        }
+  
+        @media screen and (max-width: 1170px) {
+          width: calc(50% - 0.7rem) !important;
+        }
+        
+        @media screen and (max-width: 947px) {
+          
+          width: 100% !important;
+        }
+      }
+      .form-search.form-search-button {
+        display: flex;
+        // transition: all 0.5s;
+        align-items: flex-end;
+      }
+      .btn-search {
+        min-width: 100px;
+      }
+    }
+  }
+  .date-picker-custom {
+    .date-picker-customer {
+      justify-content: space-between;
+      @media screen and (max-width: 521px) {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .box-date-picker {
+        min-width: 0;
+        width: 50%;
+        @media screen and (max-width: 521px) {
+          width: 100%;
+        }
+      }
+      .icon-from-to {
+        @media screen and (max-width: 521px) {
+          margin: 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  
+}

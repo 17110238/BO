@@ -1,0 +1,129 @@
+.email-merchant-container {
+  background-color: #fff;
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+    button {
+      color: #272b41;
+      border: 1px solid #272b41;
+    }
+
+    button.btn-active {
+      color: #00be00;
+      border: 1px solid #00be00;
+    }
+  }
+  //box search supplier
+  .boxsearch-email-merchant {
+    padding: 10px 3px;
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .btn-clear {
+      margin-left: 1rem;
+      padding: 8px;
+      border: 1px solid transparent;
+      background-color: #e2fee5;
+      color: #00be00;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-search {
+      min-width: 100px;
+    }
+    .date-picker-custom {
+      .date-picker-customer {
+        justify-content: space-between;
+        @media screen and (max-width: 521px) {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+        .box-date-picker {
+          min-width: 0;
+          width: 50%;
+          @media screen and (max-width: 521px) {
+            width: 100%;
+          }
+        }
+        .icon-from-to {
+          @media screen and (max-width: 521px) {
+            margin: 0 auto;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    .form-search.form-date {
+      flex: 1;
+    }
+    form {
+      gap: 0.7rem;
+      margin: 0.5rem;
+      .form-search {
+        width: calc(25% - 0.7rem);
+        @media screen and (max-width: 1730px) {
+          width: calc(33.333333% - 0.7rem);
+          &:nth-child(1){
+            width: calc(30% - 0.7rem);
+          }
+        }
+        @media screen and (max-width: 1400px) {
+          width: calc(50% - 0.7rem);
+        }
+        @media screen and (max-width: 726px) {
+          width: 100% !important;
+        }
+
+      }
+      .form-search.form-search-button {
+        display: flex;
+
+        align-items: flex-end;
+        @media screen and (max-width: 1400px) {
+          width: 100%;
+
+        }
+        @media screen and (max-width: 460px) {
+          flex-wrap: wrap;
+          gap: 12px;
+          .btn-search {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .data-table-email-merchant {
+    .content {
+      max-height: 100%;
+      height: 90px;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-all;
+    }
+  }
+}
+.modal-email-merchant-container {
+  iframe {
+    border: none;
+  }
+}

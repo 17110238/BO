@@ -1,0 +1,19 @@
+.btn-action {
+  &:hover {
+    background-color: rgba(0, 190, 0, 0.1);
+    i {
+      color: rgba(0, 190, 0, 1);
+    }
+  }
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 3.3;
+  i {
+    display: inline-block;
+    font-size: 15px;
+    color: #acadaf;
+  }
+}

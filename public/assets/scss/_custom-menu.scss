@@ -1,0 +1,49 @@
+
+.custom-menu-container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    padding:0 15px;
+    .custom-menu-contain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } 
+    .list-group-header {
+        display: flex;
+        margin-bottom: 15px;
+        div {
+            flex-grow: 1;
+            .menus-title {
+                margin-left: 3.5rem !important;
+            }
+        }
+        .icon-plus {
+            color: green;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            position: relative; 
+        }  
+    }
+    .custom-node {
+        width: 100%;
+        display: flex;
+
+        .node-module {
+            flex-grow: 1;
+            border-right: 2px dashed #ccc;
+            margin-right:30px;
+        }
+
+        .node-menu {
+            flex-grow: 1;
+            margin-left: 10px
+        }
+    }
+
+    .add-menu-items {
+        display: flex;
+        align-items: center;
+    }
+}

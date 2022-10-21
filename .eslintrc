@@ -1,0 +1,153 @@
+{
+  "parser": "@babel/eslint-parser",
+  // "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "react-hooks"
+  ],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "globals": {
+    "fetch": true,
+    "expect": true,
+    "setupTest": true
+  },
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "jquery": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-nested-ternary": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "react/no-danger": "off",
+    "no-eval": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "no-bitwise": "off",
+    "camelcase": "off",
+    "no-script-url": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "import/prefer-default-export": "off",
+    "react/no-children-prop": "off",
+    "react/no-unescaped-entities": [
+      2,
+      {
+        "forbid": [
+          ">",
+          "}"
+        ]
+      }
+    ],
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off",
+    "no-param-reassign": "off",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "class",
+          "for"
+        ]
+      }
+    ],
+    "prefer-stateless-function": [
+      0,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "global-require": 0,
+    "semi": [
+      2,
+      "never"
+    ],
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "new-cap": [
+      2,
+      {
+        "newIsCap": true,
+        "capIsNew": false
+      }
+    ],
+    "arrow-body-style": 0,
+    "class-methods-use-this": 0,
+    "imports-first": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-space-before-closing": 0,
+    "react/jsx-boolean-value": [
+      1,
+      "never"
+    ],
+    "react/forbid-prop-types": [
+      1,
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "react/sort-comp": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "react/destructuring-assignment": [
+      1,
+      "always"
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "off",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.padding__left {
+  padding-left: 5px !important;
+}
+.barchart {
+  background: #eff0f3;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+
+  &__content {
+    background: white;
+    width: 49%;
+    overflow: hidden;
+    border-radius: 15px;
+    .barchart__title {
+      background-color: #42a5f5;
+      color: white;
+    }
+    .barchart__title1 {
+      background-color: #8884d8;
+      color: white;
+    }
+    .barchart__title2 {
+      background-color: #ffc658;
+      color: white;
+    }
+    .barchart__title3 {
+      background-color: #83a6ed;
+      color: white;
+    }
+    h5 {
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #272b41;
+    }
+    .select__option {
+      display: flex;
+      align-items: flex-start;
+      padding: 0px 10px 10px 10px;
+      flex-direction: column;
+      justify-content: center;
+      label{
+      font-weight: 600;
+     font-size: 15px;
+      margin-bottom: 8px;
+      }
+      // position: relative;
+      // height: 3em;
+      // border-radius: 0.25em;
+      // overflow: hidden;
+      // select {
+      //   /* Reset Select */
+      //   appearance: none;
+      //   outline: 0;
+      //   border: 0;
+      //   box-shadow: none;
+      //   width: 20em;
+      //   /* Personalize */
+      //   flex: 1;
+      //   padding: 0 1em;
+      //   color: #fff;
+      //   background-color: #34495e;
+      //   background-image: none;
+      //   cursor: pointer;
+      // }
+      // /* Remove IE arrow */
+      // select::-ms-expand {
+      //   display: none;
+      // }
+      // /* Custom Select wrapper */
+
+      // /* Arrow */
+      // &::after {
+      //   content: '\25BC';
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   padding: 1em;
+      //   background-color: #34495e;
+      //   transition: 0.25s all ease;
+      //   pointer-events: none;
+      // }
+      // /* Transition */
+      // &:hover::after {
+      //   color: #f39c12;
+      // }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .barchart {
+    background: #eff0f3;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+      background: white;
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 1%;
+      h5 {
+        text-align: left;
+      }
+    }
+  }
+}

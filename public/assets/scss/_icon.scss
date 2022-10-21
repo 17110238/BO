@@ -1,0 +1,455 @@
+.pm {
+  width: 24px;
+  height: 24px;
+  margin-right: 0;
+  display: inline-block;
+}
+//dashboard
+.pm-close12 {
+  width: 12px;
+  height: 12px;
+  background: url(/assets/icon/close12.png);
+  background-size: cover;
+}
+.pm-dashboard {
+  background-image: url(/assets/icon/dashboard-unactive.svg);
+}
+a {
+  &:hover {
+    .pm-dashboard {
+      background-image: url(/assets/icon/dashboard-active.svg);
+    }
+  }
+}
+.active {
+  .pm-dashboard {
+    background-image: url(/assets/icon/dashboard-active.svg);
+  }
+}
+//account
+.pm-account {
+  background-image: url(/assets/icon/icon-account.png);
+}
+a {
+  &:hover {
+    .pm-account {
+      background-image: url(/assets/icon/icon-account-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-account {
+    background-image: url(/assets/icon/icon-account-active.png);
+  }
+}
+
+//balances
+.pm-balances {
+  background-image: url(/assets/icon/balances-unactive.svg);
+}
+a {
+  &:hover {
+    .pm-balances {
+      background-image: url(/assets/icon/balances-active.svg);
+    }
+  }
+}
+
+.active {
+  .pm-balances {
+    background-image: url(/assets/icon/balances-active.svg);
+  }
+}
+
+//PayME link
+.pm-link {
+  background-image: url(/assets/icon/icon-pay-me-link.png);
+}
+a {
+  &:hover {
+    .pm-link {
+      background-image: url(/assets/icon/icon-pay-me-link-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-link {
+    background-image: url(/assets/icon/icon-pay-me-link-active.png);
+  }
+}
+//PayME page
+.pm-page {
+  background-image: url(/assets/icon/icon-pay-me-page.png);
+}
+a {
+  &:hover {
+    .pm-page {
+      background-image: url(/assets/icon/icon-pay-me-page-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-page {
+    background-image: url(/assets/icon/icon-pay-me-page-active.png);
+  }
+}
+//PayME button
+.pm-button {
+  background-image: url(/assets/icon/icon-pay-me-button.png);
+}
+a {
+  &:hover {
+    .pm-button {
+      background-image: url(/assets/icon/icon-pay-me-button-active.png);
+    }
+  }
+}
+
+//PayME POS
+.active {
+  .pm-pos {
+    background-image: url(/assets/icon/icon-pm-pos-active.svg);
+  }
+}
+.pm-pos {
+  background-image: url(/assets/icon/icon-pm-pos.svg);
+}
+a {
+  &:hover {
+    .pm-pos {
+      background-image: url(/assets/icon/icon-pm-pos-active.svg);
+    }
+  }
+}
+
+.active {
+  .pm-button {
+    background-image: url(/assets/icon/icon-pay-me-button-active.png);
+  }
+}
+//Transaction
+.pm-transaction {
+  background-image: url(/assets/icon/icon-transaction.png);
+}
+a {
+  &:hover {
+    .pm-transaction {
+      background-image: url(/assets/icon/icon-transaction-active.png);
+    }
+  }
+}
+.active {
+  .pm-transaction {
+    background-image: url(/assets/icon/icon-transaction-active.png);
+  }
+}
+//Template
+.pm-template {
+  background-image: url(/assets/icon/icon-pay-me-button.png);
+}
+a {
+  &:hover {
+    .pm-template {
+      background-image: url(/assets/icon/icon-pay-me-button-active.png);
+    }
+  }
+}
+.active {
+  .pm-template {
+    background-image: url(/assets/icon/icon-pay-me-button-active.png);
+  }
+}
+
+//Message
+.pm-message {
+  background-image: url(/assets/icon/icon-sms.png);
+}
+a {
+  &:hover {
+    .pm-message {
+      background-image: url(/assets/icon/icon-sms-active.png);
+    }
+  }
+}
+.active {
+  .pm-message {
+    background-image: url(/assets/icon/icon-sms-active.png);
+  }
+}
+//Store
+.pm-store {
+  background-image: url(/assets/icon/icon-store.png);
+}
+a {
+  &:hover {
+    .pm-store {
+      background-image: url(/assets/icon/icon-store-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-store {
+    background-image: url(/assets/icon/icon-store-active.png);
+  }
+}
+//Customer
+.pm-customer {
+  background-image: url(/assets/icon/icon-account.png);
+}
+a {
+  &:hover {
+    .pm-customer {
+      background-image: url(/assets/icon/icon-account-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-customer {
+    background-image: url(/assets/icon/icon-account-active.png);
+  }
+}
+//Report
+.pm-report {
+  background-image: url(/assets/icon/icon-report.png);
+}
+a {
+  &:hover {
+    .pm-report {
+      background-image: url(/assets/icon/icon-report-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-report {
+    background-image: url(/assets/icon/icon-report-active.png);
+  }
+}
+//Settlement
+.pm-settlement {
+  background-image: url(/assets/icon/icon-settlement.png);
+}
+a {
+  &:hover {
+    .pm-settlement {
+      background-image: url(/assets/icon/icon-settlement-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-settlement {
+    background-image: url(/assets/icon/icon-settlement-active.png);
+  }
+}
+//Setting
+.pm-setting {
+  background-image: url(/assets/icon/icon-setting.png);
+}
+a {
+  &:hover {
+    .pm-setting {
+      background-image: url(/assets/icon/icon-setting-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-setting {
+    background-image: url(/assets/icon/icon-setting-active.png);
+  }
+}
+
+//support-ticket
+.pm-support-ticket {
+  background-image: url(/assets/icon/icon-support-ticket.png);
+}
+a {
+  &:hover {
+    .pm-support-ticket {
+      background-image: url(/assets/icon/icon-support-ticket-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-support-ticket {
+    background-image: url(/assets/icon/icon-support-ticket-active.png);
+  }
+}
+
+// payout
+.pm-payout {
+  background-image: url(/assets/icon/icon-chi-ho-unactive.png);
+}
+
+a {
+  &:hover {
+    .pm-payout {
+      background-image: url(/assets/icon/icon-chi-ho.png);
+    }
+  }
+}
+.active {
+  .pm-payout {
+    background-image: url(/assets/icon/icon-chi-ho.png);
+  }
+}
+
+// payment new
+.pm-paymentnew {
+  background-image: url(/assets/icon/combined-shape.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  &:hover {
+    .pm-paymentnew {
+      background-image: url(/assets/icon/combined-shape-hover.svg);
+    }
+  }
+}
+.active {
+  .pm-paymentnew {
+    background-image: url(/assets/icon/combined-shape-hover.svg);
+  }
+}
+
+// Manager users
+.pm-users {
+  background-image: url(/assets/icon/icon_group_inact.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px;
+  background-color: #eff2f7;
+  border-radius: 5px;
+}
+
+a {
+  &:hover {
+    .pm-users {
+      background-image: url(/assets/icon/icon_group_act.png);
+    }
+  }
+}
+.active {
+  .pm-users {
+    background-image: url(/assets/icon/icon_group_act.png);
+  }
+}
+
+// Manager merchant
+.pm-mc {
+  background-image: url(/assets/icon/icon_case_inact.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px;
+  background-color: #eff2f7;
+  border-radius: 5px;
+}
+
+a {
+  &:hover {
+    .pm-mc {
+      background-image: url(/assets/icon/icon_case_act.png);
+    }
+  }
+}
+.active {
+  .pm-mc {
+    background-image: url(/assets/icon/icon_case_act.png);
+  }
+}
+
+// Manager email-sms
+.pm-sms {
+  background-image: url(/assets/icon/icon-sms.png);
+}
+a {
+  &:hover {
+    .pm-sms {
+      background-image: url(/assets/icon/icon-sms-active.png);
+    }
+  }
+}
+
+.active {
+  .pm-sms {
+    background-image: url(/assets/icon/icon-sms-active.png);
+  }
+}
+
+// .icon-custom {
+//   width: 24px;
+//   height: 24px;
+// }
+
+//icon-config
+a {
+  &:hover {
+    .icon-fa {
+      &:before {
+        color: #00be00;
+      }
+    }
+  }
+}
+.icon-fa {
+  padding: 0.25rem;
+  background-color: rgb(240 244 251 / 50%);
+  color: #647081 !important;
+  border-radius: 8px;
+  width: 23.75px;
+  display: flex;
+  justify-content: center;
+  &::before {
+    transition: all 0.35s linear;
+  }
+}
+
+.active {
+  .icon-fa {
+    color: #00be00 !important;
+  }
+}
+//accountant
+
+.pm-acctant {
+  background-image: url(/assets/icon/file-invoice-dollar-solid.svg);
+}
+a {
+  &:hover {
+    .pm-acctant {
+      background-image: url(/assets/icon/file-invoice-dollar-solid.svg);
+    }
+  }
+}
+
+.active {
+  .pm-acctant {
+    background-image: url(/assets/icon/file-invoice-dollar-solid.svg);
+  }
+}
+
+.pm-bank-report {
+  background-image: url(/assets/icon/bank-report-form.jpg);
+}
+a {
+  &:hover {
+    .pm-bank-report {
+      background-image: url(/assets/icon/bank-report-form-active.jpg);
+    }
+  }
+}
+
+.active {
+  .pm-bank-report {
+    background-image: url(/assets/icon/bank-report-form-active.jpg);
+  }
+}

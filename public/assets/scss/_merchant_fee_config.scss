@@ -1,0 +1,332 @@
+.fee-config-merchant {
+  p {
+    margin: 0;
+  }
+  .loading-block {
+    min-height: 50vh;
+    border-radius: 13px;
+
+    width: 100%;
+
+    position: relative;
+    background-color: white;
+
+    margin-bottom: 10px;
+  }
+  margin-bottom: 10px;
+  .fee-config {
+    border-radius: 10px;
+
+    background-color: white;
+
+    padding: 1rem;
+
+    &__group-fee-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0.25rem 25px;
+
+      & > label.check-all-input {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+        input[type='checkbox'] {
+          margin-bottom: 2px;
+          margin-right: 0.5rem;
+        }
+      }
+
+      .text-highlight {
+        font-weight: 600;
+        text-decoration: underline;
+
+        color: #00be00;
+
+        cursor: pointer;
+      }
+    }
+
+    &__header {
+      display: flex;
+      margin-bottom: 1rem;
+      &-title {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold;
+        color: #272b41;
+        @media screen and (max-width: 350px) {
+          font-size: 14px;
+        }
+      }
+      &-right {
+        width: 200px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        .transaction-channel-input {
+          margin-left: 1rem;
+          width: 100%;
+          .select-transaction-channel {
+            &__control {
+              border-radius: 12px;
+              padding: 2px 0px;
+              box-shadow: none;
+            }
+
+            &__value-container {
+              .select-transaction-channel__single-value {
+                font-size: 15px;
+              }
+            }
+
+            &__control--is-focused {
+              border-color: #00be00;
+            }
+
+            &__option--is-focused {
+              background-color: #e2fee5;
+              color: #00be00;
+            }
+
+            &__option--is-selected {
+              background-color: #00be00;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    &__content {
+      .datatable-fee-config {
+        border-radius: 0;
+        margin-bottom: 2rem;
+
+        &.datatable-vertical {
+          .fee-input-item {
+            width: unset;
+            margin: 0.25rem 0;
+            input {
+              padding: 0.5rem;
+            }
+          }
+
+          @media only screen and (max-width: 550px) {
+            .rdt_TableCell {
+              &:not(&:first-child) {
+                .data-table-label {
+                  font-size: 12px;
+                  min-width: 75px;
+                }
+              }
+
+              .fee-input-item {
+                min-width: 155px;
+                width: 155px;
+              }
+            }
+          }
+        }
+      }
+
+      .fee-input-item {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+
+        &__default {
+          display: flex;
+          min-width: 85px;
+          input[type='checkbox'] {
+            margin-right: 4px;
+            margin-top: 1px;
+          }
+        }
+        .fee-input {
+          border: 1px solid lightgrey;
+          outline: none;
+          background-color: transparent;
+
+          min-width: 80px;
+          width: 100%;
+
+          box-shadow: none !important;
+          height: 85%;
+
+          border-radius: 10px;
+          padding: 0px 10px;
+          &:disabled {
+            background-color: #eff2f7;
+          }
+          &:focus {
+            background-color: transparent;
+            border: 1px solid #00be00;
+          }
+
+          &.input-custom-error {
+            border: 1px solid red;
+          }
+        }
+      }
+
+      div[role='gridcell'] {
+        &:not(&:first-child) {
+          padding: 0px 10px;
+        }
+      }
+    }
+
+    &__log-info {
+      .inputs-group-image {
+        padding-left: 0;
+        &__imgs-info {
+          display: flex;
+        }
+        &__imgs-log-fee {
+          .imgs-info {
+            &__upload-img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 10px 0;
+              padding: 0;
+              width: 35%;
+              max-width: 35%;
+              flex: 1 0 auto;
+              @media screen and (max-width: 550px) {
+                width: 50%;
+                max-width: 50%;
+              }
+              .upload-img__btn {
+                min-height: 78px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #a5aeb8;
+                width: 100%;
+                height: 100%;
+                padding: 16px 16px 18px;
+                border-radius: 13px;
+                cursor: pointer;
+              }
+            }
+
+            &__list {
+              display: flex;
+              margin-left: 1rem;
+
+              overflow-x: auto;
+              padding: 10px;
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
+              .row-img-preview + .row-img-preview {
+                margin-left: 1rem;
+              }
+              .row-img-preview {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                border: 1px dashed gray;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                padding: 0.75rem;
+                img {
+                  min-width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  border-radius: 12px;
+                  cursor: pointer;
+                }
+                i {
+                  position: absolute;
+                  top: -0.25rem;
+                  right: -0.5rem;
+                  color: red;
+                  border-radius: 50%;
+                  background-color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        & > .inputs-group-v2 {
+          width: 100% !important;
+          .form-input-textarea {
+            .input-textarea {
+              margin: 0 !important;
+            }
+          }
+        }
+        & > .inputs-group-image {
+          padding-left: 21px;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      &-right {
+        & > button {
+          width: 250px;
+          margin-bottom: 1rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+      & > label.check-all-input {
+        margin-left: 1rem;
+      }
+      .fee-config {
+        &__header,
+        &__footer {
+          padding: 0px 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .fee-config-merchant {
+    .fee-config {
+      &__header {
+        &-right {
+          flex-grow: 1;
+          width: auto;
+        }
+      }
+      &__footer {
+        &-right {
+          width: 100%;
+          button {
+            width: 100%;
+            margin-top: 1rem;
+            margin-left: 0rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.git
+.gitignore
+.vscode
+.next                # Existing Next.js builds
+.dockerignore
+Dockerfile
+docker-compose.yml
+node_modules         # Installed inside container
+nginx               # We'll create this directory soon
+
+production
+development
+sandbox
+cypress

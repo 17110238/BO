@@ -1,0 +1,15 @@
+.toggle-button {
+  cursor: pointer;
+  padding: 3px 4px;
+  border-radius: 3px;
+  border: 1px solid;
+  color: lighten(#647081, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+
+  .toggle-icon {
+    font-size: 9px;
+  }
+}

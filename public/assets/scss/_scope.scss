@@ -1,0 +1,79 @@
+.dropdown-item:hover.danger {
+  background: rgba(255, 116, 116, 0.06);
+  color: #db0d0d;
+}
+
+.group-container {
+  .group-add-wrap,
+  .group-item {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #00be00;
+    color: #fff;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .group-add-wrap {
+    position: relative;
+    .role-list-wrap {
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      background-color: #fff;
+      color: #000000;
+      border: 1px solid #919191;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      .role-item {
+        cursor: pointer;
+        margin-bottom: 0.25rem;
+        white-space: nowrap;
+        &.disabled {
+          color: #bdbdbd;
+          text-decoration: line-through;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .transaction-table-dropdown:hover {
+    width: fit-content;
+    .text-color {
+      color: #7bdb73;
+    }
+  }
+
+  .group-list-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .group-item {
+      position: relative;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      p {
+        margin-bottom: 0;
+      }
+      .group-item-remove-wrap {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        transition: all 0.3s;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &:hover .group-item-remove-wrap {
+        opacity: 1;
+      }
+    }
+  }
+}

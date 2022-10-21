@@ -1,0 +1,53 @@
+.modal-addCustomer {
+  .modal-dialog {
+    .modal-content {
+      max-width: 375px;
+      margin: 0 auto;
+      .modal-header {
+        border-bottom: none;
+        padding: 14px 20px 0 20px;
+        .modal-title {
+        }
+      }
+      .modal-body {
+        padding: 5px 20px 20px 20px;
+        .modal-customer-container {
+          .form-group {
+            .invalid-value {
+              color: #ec2a2a;
+              font-size: 11px;
+              bottom: -17px;
+              right: 15px;
+            }
+
+            .label-customer {
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 0;
+              color: #0b0b0b;
+            }
+            .form-control {
+              font-size: 15px;
+              letter-spacing: 0;
+              font-weight: 600;
+            }
+            .ih-medium {
+              height: 44px;
+            }
+            .btn-save {
+              color: #fff;
+              border-radius: 12px;
+              background-image: linear-gradient(262deg, #00be00, #00a500);
+              width: 100%;
+              font-size: 15px;
+              line-height: 18px;
+              text-align: center;
+              border: none;
+              padding: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

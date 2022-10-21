@@ -1,0 +1,29 @@
+.modal-invite-mem {
+  .modal-dialog {
+    .modal-content {
+      max-width: 380px;
+      margin: 0 auto;
+      .modal-header {
+        padding: 20px;
+        border-bottom: none;
+        .modal-title {
+        }
+      }
+      .modal-body {
+        padding: 0 20px 30px 20px;
+        .invite-content {
+          .alert-ss {
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            color: #3774fb;
+            margin: 40px 0;
+          }
+          .btn-invite {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

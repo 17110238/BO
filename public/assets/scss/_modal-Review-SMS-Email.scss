@@ -1,0 +1,114 @@
+.modal-Review-SMS-Email {
+  display       : flex;
+  flex-direction: row;
+  width         : 800px;
+  height        : 100%;
+
+  .formLeft {
+    display       : flex;
+    flex-direction: column;
+    width         : 35%;
+    padding       : 20px 0px;
+
+    .layout_abs_Left {
+      position           : absolute;
+      top                : 35px;
+      left               : 20px;
+      right              : 20px;
+      bottom             : 0px;
+      display            : flex;
+      flex-direction     : column;
+      padding            : 0px 10px;
+      // background-color: red;
+
+      .avatarInIphone {
+        display        : flex;
+        justify-content: center;
+
+        .layoutBorder {
+          width        : 24px;
+          height       : 24px;
+          font-size    : 10px;
+          border-Radius: 12px;
+          overflow     : hidden;
+        }
+      }
+
+      .lbName {
+        font-size      : 10px;
+        border-radius  : 7px;
+        padding        : 5px;
+        justify-content: center;
+        text-align     : center;
+      }
+
+      .lbToday {
+        font-size      : 10px;
+        border-radius  : 7px;
+        padding        : 5px;
+        justify-content: center;
+        text-align     : center;
+      }
+
+      .lbSMS {
+        margin          : 0px 10px;
+        font-size       : 10px;
+        border-Radius   : 7px;
+        background-color: whitesmoke;
+        padding         : 5px;
+      }
+
+    }
+
+  }
+
+  .formRight {
+    display         : flex;
+    flex-direction  : column;
+    background-color: whitesmoke;
+    width           : 65%;
+    padding         : 20px 10px;
+
+    .btn-Close {
+      width   : 20px;
+      position: absolute;
+      right   : 10px;
+      top     : 10px;
+    }
+
+    .content {
+      display       : flex;
+      flex-direction: column;
+      width         : 100%;
+      padding       : 20px 0px;
+
+      .layout_abs {
+        position      : absolute;
+        top           : 45px;
+        left          : 20px;
+        right         : 20px;
+        bottom        : 20px;
+        display       : flex;
+        flex-direction: column;
+
+        .line2 {
+          display       : flex;
+          flex-Direction : row;
+          align-Items    : center;
+          justify-Content: space-between;
+          .avatarInEmail{
+            display        : flex;
+            justify-content: center;
+            .layoutBorder {
+              width        : 30px;
+              height       : 30px;
+              font-size    : 10px;
+              border-Radius: 15px;
+              overflow     : hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

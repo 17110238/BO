@@ -1,0 +1,27 @@
+.dealer-report-container {
+  tr {
+    &:nth-child(odd) {
+      background: #f0f0f0;
+    }
+    td {
+      text-align: right;
+      white-space: nowrap;
+      min-width: 100px;
+    }
+    td:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+  th,
+  td {
+    border: 1px solid #bdbdbd;
+    padding: 16px;
+    min-width: 200px;
+  }
+  th {
+    font-weight: 600;
+    text-align: center;
+    color: #817daa;
+  }
+}

@@ -1,0 +1,149 @@
+.back-settings {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .text {
+    display: inline-block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  padding-bottom: 10px;
+}
+.padding__box {
+  padding-top: 0px;
+}
+.setting-container {
+  min-height: calc(100vh - 140px - 40px);
+  height: auto;
+  .card-header {
+    .title__payment {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+  }
+  .login-container {
+    min-width: 747px;
+    .form-group {
+      .form-control {
+        // font-weight: bold;
+        padding: 5px 5px 5px 10px;
+        min-height: 2.65rem;
+      }
+    }
+    // .role-create-user-container{
+    //   overflow: hidden;
+    //   overflow-y: scroll;
+    //   max-height: 747px;
+    // }
+  }
+}
+.w__300 {
+  width: 400px;
+}
+.padding__left1 {
+  padding-left: 1.5rem !important;
+}
+.edit__comtent {
+  cursor: pointer;
+  button {
+    padding: 0px 25px;
+    border: none;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    span{
+      font-weight: 400;
+      color: #4e526c;
+      font-size: 14px;
+      line-height: 1.1;
+      padding-top: 3px !important;
+    }
+  }
+  &:hover {
+    background: rgba(0, 190, 0, 0.06);
+    button{
+      i{
+        color: #03ae03 !important;
+      }
+      span {
+        color: #03ae03;
+      }
+      color: #03ae03;
+    }
+  }
+}
+
+.refcode-icon-coppy {
+  min-width: 18px;
+  background-image: url(/assets/icon/copy-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 1070px) {
+  .setting-container {
+    .login-container {
+      min-width: 90%;
+      .form-group {
+        .form-control {
+          // font-weight: bold;
+          padding: 5px 5px 5px 11px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 746px) {
+  .setting-container {
+    .justify-content-center {
+      flex-direction: column;
+      .login-container{
+        min-width: 100% !important;
+      }
+      .role-create-user-container{
+        min-width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 721px) {
+  .setting-container {
+    .login-container {
+      min-width: 100%;
+    }
+  }
+  .padding__box {
+    padding-top: 20px !important;
+  }
+}
+@media screen and (max-width: 585px) {
+  .padding__left1 {
+    padding-left: 0px !important;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .setting-container {
+    .login-container {
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .w__300 {
+    width: 100%;
+  }
+}

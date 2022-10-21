@@ -1,0 +1,36 @@
+.paymentbutton-detail-layout {
+  .duplicate {
+    a {
+      background: #f2f2f2 !important;
+      border: none;
+      padding: 0px 11px;
+      color: #00be00;
+      font-size: 18px;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+  }
+  .btn-get-code {
+    background: #f2f2f2 !important;
+    border: solid 0.5px #00be00;
+    color: #00be00 !important;
+    border-radius: 4px;
+    padding: 0 19px;
+  }
+  .item-details {
+    tr td {
+      & > div {
+        min-height: 64px;
+        padding: 14px 12px;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+  .col-lg-8.col-sm-12.col-12.box-right {
+    margin-top: -20px;
+  }
+}
+
+.payment-button-id {
+  cursor: pointer;
+}

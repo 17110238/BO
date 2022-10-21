@@ -1,0 +1,26 @@
+.detail-merchant-container.detail-expertise-merchant {
+    .datatable-expertise-merchant {
+        max-height: 200px;
+        min-height: 150px;
+    }
+    .form-group:not(.active),.fee-config{
+        pointer-events: none;
+        &:hover{
+            cursor: no-drop;
+        }
+        input,.form-input-checkbox,.select-input-form,.search-storeManage__location {
+            opacity: 0.45;
+        }
+    }
+   
+}
+.expertise-merchant-container {
+    
+    form{
+        .form-search:first-child {
+            width: 30% !important;
+            padding:  0 15px;
+        }
+
+    }
+}

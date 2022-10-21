@@ -1,0 +1,32 @@
+.modal-alert-custom{
+    .modal-content{
+        max-width: 325px;
+        width: 100%;
+        margin: 0 auto;
+        .modal-header{
+            border-bottom: none;
+        }
+        .modal-body{
+            .desc{
+                font-size: 18px;
+                font-weight: 700;
+                color: #272b41;
+                margin: 20px 0 40px 0;
+            }
+            .btn-alert{
+                max-width: 180px;
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+            }
+            .btn-alert-success{
+                background-color: #00be00;
+            }
+            .btn-alert-error{
+                background-color: #be0000;
+            }
+        }
+    }
+}

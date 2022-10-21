@@ -1,0 +1,74 @@
+.modal-payment-receipt{
+    .modal-dialog{
+        .modal-content{
+            max-width: 400px;
+            margin: 0 auto!important;
+            .modal-header{
+                border-bottom: none;
+                // padding: 5px 15px;
+                .modal-title{
+
+                }
+            }
+            .modal-body{
+                padding: 0;
+                .payment-receipt{
+                    padding: 0 28px;
+                    .send{
+                        .custom-radio{
+                            margin: 10px 0 0 0;
+                            cursor: pointer;
+                            .radio-text{
+                                color: #58666E;
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                            .lb-desc{
+                                margin: 0px 0 0 28px;
+                                color: #838383;
+                                font-size: 13px;
+                                white-space: normal;
+                            }
+                        }
+                    }
+                    .docs-link{
+                        margin: 20px 0 0 0;
+                        .link-view{
+                            color: #00BE00;
+                            font-size: 13px;
+
+                            &:hover{
+                                color: #0c740c;
+                            }
+                        }
+                        .mr-12{
+                            margin-right: 12px;
+                        }
+                    }
+                }
+                .show-an-field{
+                    margin: 20px 0 0 0;
+                    padding: 20px 28px 0;
+                    border-top: 1px solid #e3e6ef;
+                }
+                .show-80G{
+                    margin: 20px 0 0 0;
+                    padding: 20px 28px;
+                    border-top: 1px solid #e3e6ef;
+                }
+
+            }
+            .modal-footer{
+                .close-modal-btn{
+                    background-color: transparent;
+                    color: #0f1231;
+                    border: none;
+                    font-weight: 700;
+                }
+                .save-modal-btn{
+
+                }
+            }
+        }
+    }
+}

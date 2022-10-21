@@ -1,0 +1,122 @@
+.modal-comporisan-details{
+  .modal-dialog{
+    max-width: 60%;
+    .modal-content{
+      .modal-body{
+        .comporisan__detail--container{
+          color: black;
+          font-family: 'Lora', serif;
+          .comporisan__detail--title{
+            text-align: center;
+            .comporisan__detail--title-first{
+              h5{
+                font-weight: bold;
+                font-family: 'Lora', serif;
+              }
+              margin-bottom: 15px;
+            }
+            .comporisan__detail--title-second{
+              font-weight: bold;
+              margin-bottom: 15px;
+              h3{
+                font-family: 'Lora', serif;
+              }
+              h6{
+                font-family: 'Lora', serif;
+              }
+              span{
+                font-weight: bold;
+              }
+            }
+          }
+          .comporisan__detail--header{
+            ul {
+              li{
+                display: flex;
+                &::before{
+                  content: '-';
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+          .comporisan__detail--content{
+            margin: 15px 0;
+            table{
+              width: 100%;
+              tr {
+                &:first-child{
+                  background-color: darkgray;
+                  th{
+                    font-weight: bold;
+                  }
+                }
+                &:last-child{
+                  background-color: darkgray;
+                  td{
+                    font-weight: bold;
+                  }
+                }
+                th {
+                  text-align: center;
+                  border: black 1px solid;
+                  width: 18%;
+                  &:nth-child(1){
+                    width: 28%;
+                    padding: 20px 20px;
+                  }
+                }
+                td {
+                  text-align: right;
+                  border: black 1px solid;
+                  padding: 5px;
+                  &:nth-child(1){
+                    text-align: left;
+                  }
+
+                }
+              }
+            }
+          }
+          .comporisan__detail--total{
+            table{
+              tr{
+                margin-bottom: 5px;
+                th{
+                  &:last-child {
+                    width: 25%;
+                  }
+                }
+                td{
+                  &:last-child {
+                    font-weight: bold;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+            margin-bottom: 15px;
+            p{
+              font-weight: bold;
+            }
+          }
+          .comporisan__detail--footer{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            .comporisan__detail--footer-left{
+              span {
+                font-weight: bold;
+              }
+            }
+            .comporisan__detail--footer-right{
+              span{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

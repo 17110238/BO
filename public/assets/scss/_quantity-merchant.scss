@@ -1,0 +1,414 @@
+.quantityMerchantContainer {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+    button {
+      color: #272b41;
+      border: 1px solid #272b41;
+    }
+
+    button.btn-active {
+      color: #00be00;
+      border: 1px solid #00be00;
+    }
+  }
+  .top-job-merchant {
+    position: relative;
+    width: 100%;
+    // height: 40vh;
+    align-items: center;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    &__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #272b41;
+    }
+
+    .recharts-responsive-container {
+      width: 30% !important;
+      @media screen and (max-width: 1350px) {
+        width: 50% !important;
+      }
+      @media screen and (max-width: 850px) {
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+    }
+
+    .recharts-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .chart-merchant-container {
+    display: flex;
+    position: relative;
+
+    gap: 24px;
+    width: 100%;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    height: fit-content;
+    .chart-merchant-item {
+      min-height: 180px;
+      border-radius: 12px;
+
+      width: calc(25% - 24px);
+      position: relative;
+      background-size: cover !important;
+      position: relative;
+      overflow: hidden;
+      &:nth-child(1) {
+        background: url('/assets/icon/imageBgGreen.svg') no-repeat;
+      }
+      &:nth-child(2) {
+        background: url('/assets/icon/imageBgYellow.svg') no-repeat;
+      }
+      &:nth-child(3) {
+        background: url('/assets/icon/imageBgBlue.svg') no-repeat;
+      }
+      &:nth-child(4) {
+        background: url('/assets/icon/imageBgRed.svg') no-repeat;
+      }
+      @media screen and (max-width: 1630px) {
+        width: calc(50% - 24px);
+      }
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .merchant-description {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        .merchant-title {
+          font-size: 14px;
+          color: #647081;
+        }
+        .merchant-data {
+          font-size: 26px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: auto;
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+    .custom-tooltip {
+      background-color: #243746;
+      font-size: 26px;
+      .desc {
+        text-align: center;
+      }
+      .label {
+        font-size: 16px;
+      }
+    }
+  }
+  //reponsive box search
+  .date-picker-custom {
+    .date-picker-customer {
+      justify-content: space-between;
+      @media screen and (max-width: 521px) {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .box-date-picker {
+        min-width: 0;
+        width: 50%;
+        @media screen and (max-width: 521px) {
+          width: 100%;
+        }
+      }
+      .icon-from-to {
+        @media screen and (max-width: 521px) {
+          margin: 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem;
+    .form-search {
+      width: calc(17% - 1rem);
+      &:nth-child(4) {
+        width: calc(30% - 0.7rem);
+      }
+
+      @media screen and (max-width: 1750px) {
+        min-width: calc(33.333333% - 1rem);
+        &:nth-child(4) {
+          width: calc(50% - 0.7rem);
+        }
+      }
+
+      @media screen and (max-width: 1199px) {
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            width: calc(33.333333% - 1rem);
+          }
+        }
+        &:nth-child(4) {
+          width: calc(60% - 1rem);
+        }
+        // width: calc(50% - 1rem);
+      }
+
+      @media screen and (max-width: 950px) {
+        &:nth-child(4) {
+          width: calc(100% - 1rem);
+        }
+        width: calc(50% - 1rem);
+      }
+
+      @media screen and (max-width: 809px) {
+        width: 100% !important;
+      }
+    }
+    .form-search.form-search-button {
+      display: flex;
+
+      align-items: flex-end;
+    }
+    .btn-search {
+      min-width: 100px;
+    }
+  }
+  .btn-clear {
+    margin-left: 1rem;
+    padding: 8px;
+    border: 1px solid transparent;
+    background-color: #e2fee5;
+    color: #00be00;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  //
+
+  .react-tabs__tab-list {
+    // padding: 20px;
+    box-shadow: none !important;
+    background-color: #f1f2f6;
+    border: none !important;
+    .react-tabs__tab {
+      height: 100%;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-left: 25px;
+      text-align: center;
+      span {
+        display: block;
+        width: 100%;
+        padding: 0 !important;
+        cursor: pointer;
+      }
+    }
+  }
+  .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+    border: none;
+    color: #00be00;
+    box-shadow: 0 4px 2px -2px #00be00;
+    background: none !important;
+  }
+  .data-table-quantity-merchant-container {
+    margin-top: 10px;
+    border-top: 25px solid #eff0f3;
+  }
+  .system-report-container {
+    .data-table-quantity-merchant-container {
+      border-top: none;
+    }
+  }
+  .top-job--merchant__title,
+  .data-table-quantity-title {
+    font-size: 17px;
+    padding: 12px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .top-job--merchant__title {
+    width: 100%;
+    align-self: flex-start;
+  }
+  .data-table-quantity-title {
+    padding: 10px 20px 10px 10px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .top-category-card-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    @media screen and (max-width: 1250px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 700px) {
+      align-items: center;
+      justify-content: center;
+    }
+    .top-card-category-item {
+      width: calc(25% - 24px);
+      height: min-content;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-shrink: 0;
+      @media screen and (max-width: 1350px) {
+        width: calc(33% - 24px);
+      }
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: auto;
+      .top-card-category-item-color {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        flex-shrink: 0;
+      }
+      .top-card-category-item-name {
+        line-height: 1;
+      }
+    }
+  }
+}
+.quantityMerchantContainerReport {
+  .react-tabs__tab-list {
+    // padding: 20px;
+    margin-top: 0px !important;
+    box-shadow: none !important;
+    background-color: #f1f2f6;
+    border: none !important;
+    .react-tabs__tab {
+      height: 100%;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-left: 25px;
+      text-align: center;
+      span {
+        display: block;
+        width: 100%;
+        padding: 0 !important;
+        cursor: pointer;
+      }
+    }
+  }
+  .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+    border: none;
+    color: #00be00;
+    box-shadow: 0 4px 2px -2px #00be00;
+    background: none !important;
+  }
+}
+
+.quantityMerchantContainerReport-search {
+  border-bottom: 1px solid #d8d8d8;
+
+  &__item-select {
+    min-width: 250px;
+    max-width: 300px;
+    width: auto;
+    margin-right: 10px;
+    @media screen and (max-width: 1230px) {
+      flex-grow: 1;
+      max-width: unset;
+    }
+    @media screen and (max-width: 650px) {
+      min-width: unset;
+      max-width: unset;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    // padding: 20px 15px;
+    flex-wrap: wrap;
+  }
+  .date-picker-custom {
+    min-width: 500px;
+    .date-picker-customer {
+      justify-content: space-between;
+      @media screen and (max-width: 521px) {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .box-date-picker {
+        min-width: 0;
+        width: 50%;
+        @media screen and (max-width: 521px) {
+          width: 100%;
+        }
+      }
+      .icon-from-to {
+        @media screen and (max-width: 521px) {
+          margin: 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  &__group {
+    min-width: 250px;
+    max-width: 300px;
+    &:nth-of-type(1) {
+      margin-right: 60px;
+    }
+    &:nth-of-type(2) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width: 1230px) {
+    .day__picker {
+      flex-grow: 1;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .day__picker {
+      width: 100%;
+      .date-picker-customer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        .icon-from-to {
+          transform: rotate(90deg);
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

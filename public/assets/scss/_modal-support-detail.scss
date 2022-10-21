@@ -1,0 +1,51 @@
+.modal-support-detail {
+  .modal-dialog {
+    .modal-content {
+      max-width: 328px;
+      margin: 0 auto;
+      .modal-header {
+        padding: 10px 20px;
+        border-bottom: none;
+
+        .modal-title {
+          font-size: 18px;
+          font-weight: bold;
+          color: #272b41;
+        }
+      }
+      .modal-body {
+        padding: 10px 20px 30px;
+        .form-group {
+          .form-control {
+            font-size: 15px;
+            font-weight: 600;
+            color: #000000;
+          }
+        }
+        .support-content {
+          .lb-support {
+            font-size: 15px;
+            font-weight: 600;
+            color: #647081;
+          }
+          .btn-sub {
+            width: 100%;
+          }
+        }
+        .desc-sp {
+          font-size: 14px;
+          font-weight: normal;
+          color: #0b0b0b;
+        }
+        .note {
+          font-size: 14px;
+          font-weight: normal;
+          color: #a5aeb8;
+          strong {
+            color: #647081;
+          }
+        }
+      }
+    }
+  }
+}

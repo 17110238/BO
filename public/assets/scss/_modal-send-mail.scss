@@ -1,0 +1,32 @@
+.modal-send-mail {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+      }
+      .modal-body {
+        .modal__send--mail-checkbox {
+        }
+        .modal__send--mail-content {
+          margin: 15px 0;
+          .modal__send-mail-button {
+            button {
+              min-width: 80px;
+            }
+          }
+          .input-send-mail{
+            cursor: no-drop;
+            input {
+              opacity: 0.6;
+              pointer-events: none;
+            }
+          }
+          .input-custom-error {
+            & > .input-tags {
+              border: 1px dashed #ec2a2a !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

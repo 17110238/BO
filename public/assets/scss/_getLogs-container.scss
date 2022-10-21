@@ -1,0 +1,30 @@
+.imgGetLog {
+  // max-width: 82%;
+  width: 180px;
+
+  .image-groups {
+    display: flex;
+    .row-img-preview {
+      position: relative;
+      min-width: 80px;
+      width: 80px;
+      height: 45px;
+      // padding: 8px;
+      margin: 5px;
+      border: 1px dashed gray;
+      border-radius: 10px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.imgGetLog.scrollX {
+  overflow-x: scroll;
+}

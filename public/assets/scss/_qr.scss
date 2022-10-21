@@ -1,0 +1,255 @@
+.qrcode__background {
+  position: relative;
+  width: 375px;
+  height: 742px;
+  background-image: url('/assets/qrcode/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .qrcode_color {
+    position: absolute;
+    background-color: rgb(103, 86, 214);
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.qrcode__content {
+  // background-color: rgb(103, 86, 214);
+  z-index: 10;
+  opacity: 1;
+  max-width: 375px;
+  max-height: 742px;
+  width: 375px;
+  height: 742px;
+  font-family: 'Nunito Sans';
+  position: absolute;
+  .qrcode__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 128px;
+    padding-bottom: 85px;
+    width: 100%;
+    .logo__header {
+      width: 110px;
+      height: 110px;
+      background: red;
+      border-radius: 36px;
+    }
+    .content__header {
+      padding-top: 20px;
+      p {
+        font-size: 22px;
+        font-family: 'Nunito Sans';
+        color: white;
+        font-weight: 300;
+        margin: 0px;
+        line-height: 26px;
+      }
+      h5 {
+        padding-top: 4px;
+        font-size: 26px;
+        font-family: 'Nunito Sans';
+        color: white;
+        line-height: 26px;
+      }
+    }
+  }
+  .qrcode__body {
+    padding: 0 15px;
+    .qrcode__checkin {
+      display: flex;
+
+      align-items: center;
+      background-color: rgb(53, 55, 143);
+      border-radius: 20px;
+      height: 70px;
+      max-height: 70px;
+      .logo__checkin {
+        padding: 16px;
+      }
+      .content__checkin {
+        h5 {
+          font-weight: 900;
+          font-size: 18px;
+          color: white;
+          text-align: left;
+          line-height: 18px;
+        }
+        p {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: 600px;
+          padding-top: 3px;
+          color: white;
+          line-height: 18px;
+        }
+      }
+    }
+    .qrcode__service {
+      display: flex;
+      padding-top: 16px;
+      .payment__content {
+        width: 165px;
+        height: 171px;
+        border-radius: 26px;
+        background-color: white;
+        .payment__logo {
+          padding-top: 35px;
+        }
+        .payment__title {
+          h5 {
+            padding-top: 21px;
+            font-size: 18px;
+            color: rgb(103, 86, 214);
+            line-height: 18px;
+          }
+          p {
+            padding-top: 5px;
+            margin: 0px;
+            font-size: 14px;
+            color: rgb(100 112 129);
+            line-height: 18px;
+          }
+        }
+      }
+      .payment__item1 {
+        margin-right: 15px;
+      }
+    }
+  }
+  .qrcode__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 52px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .qrcode__background {
+    position: relative;
+    width: 100%;
+    height: 742px;
+    background-image: url('/assets/qrcode/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .qrcode_color {
+      position: absolute;
+      background-color: rgb(103, 86, 214);
+      opacity: 0.7;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .qrcode__content {
+    // background-color: rgb(103, 86, 214);
+    position: absolute;
+    width: 100%;
+    height: 742px;
+    font-family: 'Nunito Sans';
+    .qrcode__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 128px;
+      padding-bottom: 85px;
+      width: 100%;
+      .logo__header {
+        width: 110px;
+        height: 110px;
+        background: red;
+        border-radius: 36px;
+      }
+      .content__header {
+        padding-top: 20px;
+        p {
+          font-size: 22px;
+          font-family: 'Nunito Sans';
+          color: white;
+          font-weight: 300;
+          margin: 0px;
+          line-height: 26px;
+        }
+        h5 {
+          padding-top: 4px;
+          font-size: 26px;
+          font-family: 'Nunito Sans';
+          color: white;
+          line-height: 26px;
+        }
+      }
+    }
+    .qrcode__body {
+      padding: 0 15px;
+      .qrcode__checkin {
+        display: flex;
+
+        align-items: center;
+        background-color: rgb(53, 55, 143);
+        border-radius: 20px;
+        height: 70px;
+        max-height: 70px;
+        .logo__checkin {
+          padding: 16px;
+        }
+        .content__checkin {
+          h5 {
+            font-weight: 900;
+            font-size: 18px;
+            color: white;
+            text-align: left;
+            line-height: 18px;
+          }
+          p {
+            margin: 0px;
+            font-size: 14px;
+            font-weight: 600px;
+            padding-top: 3px;
+            color: white;
+            line-height: 18px;
+          }
+        }
+      }
+      .qrcode__service {
+        display: flex;
+        padding-top: 16px;
+        .payment__content {
+          width: 165px;
+          height: 171px;
+          border-radius: 26px;
+          background-color: white;
+          .payment__logo {
+            padding-top: 35px;
+          }
+          .payment__title {
+            h5 {
+              padding-top: 21px;
+              font-size: 18px;
+              color: rgb(103, 86, 214);
+              line-height: 18px;
+            }
+            p {
+              padding-top: 5px;
+              margin: 0px;
+              font-size: 14px;
+              color: rgb(100 112 129);
+              line-height: 18px;
+            }
+          }
+        }
+        .payment__item1 {
+          margin-right: 15px;
+        }
+      }
+    }
+    .qrcode__footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 52px;
+      padding-bottom: 21px;
+    }
+  }
+}

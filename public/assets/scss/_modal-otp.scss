@@ -1,0 +1,152 @@
+.modal-otp{
+    .modal-dialog{
+        .modal-content{
+            max-width: 375px;
+            width: 100%;
+            margin: auto;
+            .modal-header{
+                .modal-title{
+
+                }
+            }
+            .modal-body{
+                .otp-container{
+
+                    .btn-resend-otp{
+                        border-radius: 12px;
+                        background-image: -webkit-linear-gradient(
+                    214deg
+                    ,#00e000,#00be00);
+                        background-image: -moz-linear-gradient(214deg,#00e000,#00be00);
+                        background-image: linear-gradient(
+                    236deg
+                    ,#00e000,#00be00);
+                        color: #fff;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border: none;
+                        padding: 12px;
+                        min-height: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                        // max-width: 70px;
+                        // width: 100%;
+                        
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                        transition: all .5s;
+                    }
+                    .btn-confirm{
+                        border-radius: 12px;
+                        background-image: -webkit-linear-gradient(
+                    214deg
+                    ,#00e000,#00be00);
+                        background-image: -moz-linear-gradient(214deg,#00e000,#00be00);
+                        background-image: linear-gradient(
+                    236deg
+                    ,#00e000,#00be00);
+                        color: #fff;
+                        display: inline-block;
+                        font-size: 15px;
+                        font-weight: 700;
+                        border: none;
+                        padding: 12px;
+                        min-height: 40px;
+                        height: 40px;
+                        // max-width: 70px;
+                        // width: 100%;
+                        
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                        transition: all .5s;
+                    }
+                    .otp-style {
+                        width: 44px !important;
+                        height: 44px;
+                        margin: 0 5px;
+                        background: #f0f0f0;
+                        border-radius: 15px;
+                        line-height: 37px;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        border: 1px solid #f0f0f0;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        caret-color: #23b23a;
+                        -webkit-appearance: none;
+                        box-shadow: none !important;
+                      }
+                      @media screen and (max-width: 406px) {
+                        .otp-style {
+                          width: 100% !important;
+                          height: 40px;
+                          margin: 0 3px;
+                          line-height: 35px;
+                          font-size: 1.3em;
+                        }
+                      }
+                      .focus-otp {
+                        outline: none;
+                        // user-select: none !important;
+                      }
+                      .error-password {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                          width: 15px;
+                        }
+                        text-align: center;
+                        color: red;
+                      }
+                      .input-otp {
+                        animation: input-otp 0.1s linear;
+                        & > div {
+                          justify-content: center;
+                        }
+                      }
+                      .txt-img-pass {
+                        padding: 0 19px;
+                        padding-left: 30px;
+                      }
+                      .input-otp.fail-otp {
+                        /* animation: fail-otp 1s linear infinite; */
+                        animation-name: fail-otp;
+                        animation-fill-mode: forward;
+                        animation-duration: 0.5s;
+                        animation-timing-function: ease-in-out;
+                      }
+                      @keyframes fail-otp {
+                        0% {
+                          transform: translateX(0);
+                        }
+                        15% {
+                          transform: translateX(0.5rem);
+                        }
+                        30% {
+                          transform: translateX(-0.5rem);
+                        }
+                        45% {
+                          transform: translateX(0.5rem);
+                        }
+                        60% {
+                          transform: translateX(-0.5rem);
+                        }
+                        75% {
+                          transform: translateX(0.5rem);
+                        }
+                        90% {
+                          transform: translateX(-0.5rem);
+                        }
+                        100% {
+                          transform: translateX(0);
+                        }
+                      }
+                }
+            }
+        }
+    }
+}
+    
+  

@@ -1,0 +1,212 @@
+// css product list of product view
+.preview-product-list {
+  margin-top: 19px;
+  .box-product-default {
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+    padding: 8px 20px 8px 16px;
+    margin-bottom: 10px;
+    .box-product-wrapper {
+      display: flex;
+      align-items: center;
+      .fas.fa-bars {
+        color: #d8d8d8;
+        font-size: 12px;
+        margin-right: 13px;
+      }
+      > img {
+        max-width: 44px;
+        max-height: 44px;
+        width: 100%;
+        height: 100%;
+        margin-right: 12px;
+        border-radius: 8px;
+      }
+      .img-product-default {
+        margin-right: 11px;
+      }
+      .product-detail {
+        flex: auto;
+        margin-right: 22px;
+        background: #ffffff;
+        // background: #eff2f7;
+        // padding: 0 10px;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        &__name {
+          display: flex;
+          align-items: center;
+          max-width: 112px;
+        }
+        &__amount {
+          font-weight: bold;
+          color: #0b0b0b;
+        }
+      }
+      .side-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        .product-action {
+          .btn {
+            height: 30px;
+            width: 30px;
+            line-height: initial;
+            background: #eff2f7;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            padding: 0;
+            i {
+              margin: 0;
+            }
+            &.btn-delete {
+              margin-left: 15px;
+              color: #ec2a2a;
+            }
+            &.btn-update {
+              color: #00be00;
+            }
+          }
+        }
+        .custom-checkbox {
+          margin-right: 28px;
+          label {
+            padding: 0;
+            margin-bottom: -5px;
+            &::after {
+              opacity: 0.5;
+            }
+          }
+        }
+        .product-quantity {
+          margin-right: 28px;
+        }
+        .custom-control {
+          padding-left: 58px;
+          min-height: auto;
+          input {
+            display: none;
+          }
+          &-label {
+            &::before {
+              width: 31px;
+              height: 19px;
+              border: none;
+              border-radius: 18px;
+              left: -31px;
+            }
+            &::after {
+              width: 16.5px;
+              height: 16.5px;
+              border-radius: 50px;
+              box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.16),
+                0 3px 8px 0 rgba(0, 0, 0, 0.15);
+              background-color: #fff;
+              right: 13px;
+              top: 3.5px !important;
+              left: auto;
+            }
+          }
+
+          &-input {
+            &:checked ~ .custom-control-label::after {
+              transform: translateX(12px);
+            }
+          }
+        }
+      }
+    }
+    &.CUSTOMER_DECIDE_AMOUNT {
+      .product-detail {
+        background: #eff2f7;
+        padding: 4px 10px;
+        &__amount {
+          color: #647081;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+    }
+    .btn-using-voucher {
+      height: auto;
+      line-height: initial;
+      padding: 0;
+      font-size: 12px;
+      margin-left: 79px;
+      &.no-img {
+        margin-left: 23px;
+      }
+    }
+  }
+
+  // custom for preview page
+  &.is-preview {
+    padding: 0 11px;
+    margin-top: 0;
+    .box-product-default {
+      box-shadow: none;
+      border-radius: 0;
+      padding: 11px 0;
+      margin-bottom: 0;
+      &:not(:last-child) {
+        border-bottom: 1px dashed #c7c7c7;
+      }
+      .box-product-wrapper {
+        > img {
+          flex-shrink: 0;
+          max-width: 37px;
+          max-height: 37px;
+          height: 100vh;
+          border-radius: 6.8px;
+          margin-right: 9px;
+        }
+        .img-product-default {
+          width: 37px;
+          height: 37px;
+          margin-right: 9px;
+        }
+        .product-detail {
+          flex: auto;
+          border-radius: 6.8px;
+          &__name {
+            display: flex;
+            align-items: center;
+            max-width: 81px;
+            font-size: 8.5px;
+          }
+          &__amount {
+            font-size: 11.9px;
+          }
+        }
+        .side-right {
+          .product-quantity {
+            margin-right: 0;
+            .form-control {
+              margin: 0 5px;
+            }
+          }
+          .custom-checkbox {
+            margin-right: 0;
+          }
+        }
+      }
+      &.CUSTOMER_DECIDE_AMOUNT {
+        .product-detail {
+          margin-right: 0;
+        }
+      }
+      .btn-using-voucher {
+        margin-left: 46px;
+        &.no-img {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

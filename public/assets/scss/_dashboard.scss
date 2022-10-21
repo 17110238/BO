@@ -1,0 +1,76 @@
+.recharts-tooltip-wrapper {
+}
+.top-job-merchant {
+  .recharts-responsive-container {
+    min-height: 300px;
+  }
+}
+.recharts-responsive-container {
+  
+  .recharts-wrapper {
+    .recharts-tooltip-wrapper {
+      z-index: 9000 !important;
+      .customTooltip {
+        margin: 0;
+        line-height: 5px;
+        border: 1px solid #f5f5f5;
+        background-color: rgba(255, 255, 255, 255);
+        padding-bottom: 0%;
+
+        .tooltipTitle {
+          margin: -10px;
+          color: #666;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+.recharts-surface {
+  // transform: translate(80px, 0px);
+}
+.recharts-cartesian-axis-ticks {
+  // transform: translateX(20px);
+}
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid #f9fbff;
+  // max-width: 425px;
+  width: 100%;
+  .label {
+    margin: 0 0 0 15px;
+    font-size: 20px;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  .foo {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 576px) {
+  .custom-tooltip {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: 1px solid #f9fbff;
+    // max-width: 425px;
+    width: 80%;
+    .label {
+      margin: 0 0 0 15px;
+      font-size: 15px;
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+      text-align: left;
+    }
+    .foo {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

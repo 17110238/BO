@@ -1,0 +1,78 @@
+#Message {
+  min-height: 80vh;
+  background-color: #fff;
+  background-image: url('/assets/img/announce-bg-1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0 15px 0;
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 15px 25px;
+    border-bottom: 1px solid #d8d8d8;
+    .header__title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #272b41;
+      margin-bottom: 0;
+    }
+  }
+  .list-customer-wrap {
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dotted #bdbdbd;
+  }
+  .message-form {
+    padding: 0 25px;
+    .inputs-wrapper {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .side-inputs {
+      min-width: 600px;
+    }
+    .form-input {
+      margin-bottom: 1rem;
+    }
+    .content-input {
+      width: 100%;
+    }
+    label {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  #Message {
+    .message-form {
+      .inputs-wrapper {
+        flex-direction: column;
+      }
+      .side-inputs {
+        min-width: 0;
+      }
+      .group-form-input {
+        flex-direction: column;
+        gap: 0;
+      }
+      .form-input {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #Message {
+    .message-form {
+      .form-input {
+        min-width: 0;
+      }
+    }
+  }
+}

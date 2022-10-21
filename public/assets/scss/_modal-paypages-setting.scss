@@ -1,0 +1,75 @@
+.modal-paypages-setting{
+    .modal-dialog{
+        .modal-content{
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            .modal-header{
+                padding: 10px 24px;
+                .modal-title{
+
+                }
+            }
+            .modal-body{
+                padding: 0;
+                .content-pme-setting{
+                    .detail-section{
+                        padding: 24px;
+                        border-bottom: 1px solid #ececec;
+                        .lb-test{
+                            font-size: 14px;
+                            background: #fff;
+                            color: #57666d;
+                            line-height: 36px;
+                            pointer-events: none;
+                            opacity: 0.5;
+                        }
+                        .item-theme{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            .label-input{
+                                margin: 0 15px 0 0;
+                            }
+                        }
+                        .label-cus{
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 20px;
+                        }
+                        .btn-create{
+                            background-color: transparent;
+                            color: #528ff0;
+                            border: 0;
+                            padding: 0;
+                            margin: 0 4px 0 0;
+                            line-height: inherit;
+                            cursor: pointer;
+                            font-weight: 700;
+                        }
+                        .new-span{
+                            padding: 2px 5px;
+                            font-weight: 700;
+                            color: #fff;
+                            background-color: #27c24c;
+                            border-radius: 20px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                border-top: none;
+                .cancel-modal-btn{
+                    background-color: transparent;
+                    color: #27c24c;
+                    font-weight: 700;
+                    border: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.modal-step1-verification {
+  .modal-dialog {
+    .modal-content {
+      max-width: 450px;
+      margin: 0 auto;
+      .modal-header {
+        padding: 10px 20px;
+        border-bottom: none;
+        .modal-title {
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          color: #000050;
+        }
+      }
+      .modal-body {
+        padding: 10px 20px 30px;
+        .info-verify {
+          .content-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .illus {
+              margin: 0 15px 0 0;
+            }
+            .desc-inf {
+              font-size: 16px;
+              font-weight: normal;
+              color: #272b41;
+            }
+            a {
+              font-size: 14px;
+              font-weight: normal;
+              color: #00be00;
+              text-decoration: underline;
+            }
+          }
+
+          .btn-step {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.modal-step2-verification {
+  .modal-dialog {
+    .modal-content {
+      max-width: 350px;
+      margin: 0 auto;
+      .modal-header {
+        padding: 10px 20px;
+        border-bottom: none;
+        .modal-title {
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          color: #000050;
+        }
+      }
+      .modal-body {
+        padding: 10px 20px 30px;
+        .info-verify {
+          .content-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .illus {
+              margin: 0 15px 0 0;
+            }
+            .desc-inf {
+              font-size: 16px;
+              font-weight: normal;
+              color: #272b41;
+            }
+            a {
+              font-size: 14px;
+              font-weight: normal;
+              color: #00be00;
+              text-decoration: underline;
+            }
+          }
+
+          .btn-step {
+            width: 100%;
+            margin-top: 20px;
+          }
+          .verify-mobi {
+            font-size: 16px;
+            font-weight: normal;
+            color: #272b41;
+          }
+          .otp-desc {
+            margin: 10px 0;
+          }
+          .a-change {
+            font-weight: 700;
+            color: #0ab819;
+            border: 0;
+            padding: 0;
+            margin: 0 4px 0 0;
+            line-height: inherit;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          .cls-resend {
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          .btn-confirm {
+            width: 100%;
+          }
+          .input-otp {
+            margin: 0 0 13px 0 !important;
+            animation: input-otp 0.1s linear;
+            & > div {
+              justify-content: center;
+            }
+            .otp-style {
+              width: 40px !important;
+              height: 40px;
+              margin: 0 5px;
+              background: #f0f0f0;
+              border-radius: 8px;
+              line-height: 37px;
+              font-size: 1.5em;
+              font-weight: 600;
+              border: 1px solid #f0f0f0;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              caret-color: #23b23a;
+              -webkit-appearance: none;
+              box-shadow: none !important;
+            }
+          }
+          .fail-otp {
+            animation-name: fail-otp;
+            animation-fill-mode: forward;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+          }
+          @keyframes fail-otp {
+            0% {
+              transform: translateX(0);
+            }
+            15% {
+              transform: translateX(0.5rem);
+            }
+            30% {
+              transform: translateX(-0.5rem);
+            }
+            45% {
+              transform: translateX(0.5rem);
+            }
+            60% {
+              transform: translateX(-0.5rem);
+            }
+            75% {
+              transform: translateX(0.5rem);
+            }
+            90% {
+              transform: translateX(-0.5rem);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

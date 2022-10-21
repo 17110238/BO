@@ -1,0 +1,39 @@
+.changeAccountBalance {
+  width: 100%;
+  min-height: calc(100vh - 65px - 83px) !important;
+  height: auto;
+  background-color: #fff;
+  height: max-content;
+  &__title {
+    padding: 10px 25px;
+    border-bottom: 1px solid #d8d8d8;
+    max-height: 61px;
+    height: 61px;
+    align-items: center;
+    display: flex;
+    h5 {
+      font-family: 'Nunito Sans';
+      font-size: 17px;
+      font-weight: bold;
+      color: #272b41;
+    }
+  }
+  .form-group {
+    .form-control{
+      min-height: 2.65rem;
+    }
+  }
+  &__content {
+    display: flex;
+
+    justify-content: center;
+    &_form {
+      margin-top: 20px;
+      width: auto;
+      width: 600px;
+      padding: 10px 20px;
+      border: 1px solid #d8d8d8;
+
+    }
+  }
+}
